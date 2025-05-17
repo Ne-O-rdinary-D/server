@@ -23,13 +23,14 @@ public class Quiz extends BaseEntity{
 
     private String content;
 
+    private String firstOption;
+
+    private String secondOption;
+
     private String explanation;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @OneToMany(mappedBy = "quizzes", cascade = CascadeType.ALL)
-    @Builder.Default
-    private List<QuizOption> quizOptions = new ArrayList<>();
 }
