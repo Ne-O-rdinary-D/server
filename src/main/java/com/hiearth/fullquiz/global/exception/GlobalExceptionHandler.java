@@ -11,12 +11,12 @@ import org.springframework.web.servlet.resource.NoResourceFoundException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@RestControllerAdvice
+//@RestControllerAdvice
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(FullquizException.class)
-    public ResponseEntity<ApiResponse<Void>> handlePhotorizeException(FullquizException ex) {
-        log.error("PhotorizeException: {}", ex.getMessage(), ex);
+    public ResponseEntity<ApiResponse<Void>> handleException(FullquizException ex) {
+        log.error("Exception: {}", ex.getMessage(), ex);
         return ApiResponse.error(ex.getErrorType());
     }
 
