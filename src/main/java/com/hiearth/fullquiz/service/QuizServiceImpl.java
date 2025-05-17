@@ -1,15 +1,18 @@
 package com.hiearth.fullquiz.service;
 
-import com.hiearth.fullquiz.domain.Category;
-import com.hiearth.fullquiz.domain.Quiz;
-import com.hiearth.fullquiz.repository.CategoryRepository;
-import com.hiearth.fullquiz.repository.QuizRepository;
+import com.hiearth.fullquiz.domain.*;
+import com.hiearth.fullquiz.domain.mapping.MemberQuiz;
+import com.hiearth.fullquiz.repository.*;
+import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
 import com.hiearth.fullquiz.web.dto.CategoriesResponse;
 import com.hiearth.fullquiz.web.dto.QuizResponse;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,6 +21,82 @@ import java.util.stream.Collectors;
 public class QuizServiceImpl implements QuizSevice{
 
     private final CategoryRepository categoryRepository;
+    private final QuizRepository quizRepository;
+    private final QuizProgressRepository quizProgressRepository;
+    private final MemberQuizRepository memberQuizRepository;
+    private final MemberRepository memberRepository;
+
+    @Override
+    @Transactional
+    public List<QuizResponse> getQuizzes(Long memberId, String categoryName) {
+        Category category = categoryRepository.findByName(categoryName)
+                .orElseThrow(() -> new IllegalArgumentException("해당 카테고리가 없습니다."));
+
+        List<Quiz> quizzes = quizRepository.getQuizByCategoryId(category.getId());
+        List<Quiz> selectedQuizzes = getRandomQuizzes(quizzes);
+
+        QuizProgress quizProgress = QuizProgress.builder()
+                .memberId(memberId)
+                .categoryId(category.getId())
+                .currentIndex(0)
+                .isCompleted(false)
+                .build();
+
+        List<QuizAnswer> answers = new ArrayList<>();
+        List<QuizResponse> responses = new ArrayList<>();
+
+        for (int i = 0; i < selectedQuizzes.size(); i++) {
+            Quiz quiz = selectedQuizzes.get(i);
+
+            answers.add(QuizAnswer.builder()
+                    .quizId(quiz.getId())
+                    .indexNumber(i)
+                    .isCorrect(null)
+                    .userAnswer(null)
+                    .answer(quiz.getAnswer())
+                    .quizProgress(quizProgress)
+                    .build());
+
+            quizProgress.getQuizIds().add(quiz.getId());
+            responses.add(QuizResponse.of(quiz, i));
+        }
+
+        quizProgress.getQuizAnswers().addAll(answers);
+        quizProgressRepository.save(quizProgress);
+
+        return responses;
+    }
+
+    @Override
+    @Transactional
+    public void checkAnswer(Long quizId, Long memberId, CheckAnswerDTO checkAnswerDTO) {
+
+        Quiz quiz = quizRepository.findById(quizId).orElseThrow();
+        Member member = memberRepository.findById(memberId).orElseThrow();
+
+        memberQuizRepository.save(
+                MemberQuiz.builder()
+                        .member(member)
+                        .quiz(quiz)
+                        .isCorrect(checkAnswerDTO.isCorrect())
+                        .build()
+        );
+
+        QuizProgress quizProgress = quizProgressRepository
+                .findByMemberIdAndCategoryId(memberId, checkAnswerDTO.getCategoryId())
+                .orElseThrow();
+
+        quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.isCorrect());
+    }
+
+    private List<Quiz> getRandomQuizzes(List<Quiz> quizzes) {
+        Collections.shuffle(quizzes);
+
+        List<Quiz> selectedQuizzes = quizzes.stream()
+                .limit(5)
+                .toList();
+        return selectedQuizzes;
+    }
 
     @Override
     public List<CategoriesResponse> getCategories() {
