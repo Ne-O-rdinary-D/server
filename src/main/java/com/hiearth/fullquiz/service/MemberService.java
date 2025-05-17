@@ -6,4 +6,6 @@ public interface MemberService {
     Member findOrCreateMember(String nickname);
 
     Member findByNickname(String nickname);
+
+    boolean existsByNickname(String nickname);
 }

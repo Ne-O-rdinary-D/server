@@ -5,13 +5,12 @@ import com.hiearth.fullquiz.service.MemberService;
 import com.hiearth.fullquiz.service.request.MemberCreateDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
 public class MemberController {
+
     private final MemberService memberService;
 
     @PostMapping("/api/members")
@@ -20,5 +19,9 @@ public class MemberController {
         return ApiResponse.created();
     }
 
+    @GetMapping("/api/members")
+    public ResponseEntity<?> checkDuplicateNickname(@RequestParam String nickname) {
+        return ApiResponse.ok(memberService.existsByNickname(nickname));
+    }
 
 }

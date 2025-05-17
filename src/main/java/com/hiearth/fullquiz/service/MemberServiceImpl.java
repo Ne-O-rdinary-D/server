@@ -36,4 +36,9 @@ public class MemberServiceImpl implements MemberService{
     public Member findByNickname(String nickname) {
         return memberRepository.findByNickname(nickname).orElseThrow();
     }
+
+    @Override
+    public boolean existsByNickname(String nickname) {
+        return memberRepository.findByNickname(nickname).isEmpty();
+    }
 }
