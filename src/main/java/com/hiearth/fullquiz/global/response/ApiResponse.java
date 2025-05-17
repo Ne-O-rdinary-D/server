@@ -59,6 +59,7 @@ public class ApiResponse<T> {
         return ResponseEntity.status(errorType.getStatus())
                 .body(ApiResponse.<Void>builder()
                         .status(errorType.getStatus().value())
+                        .message(errorType.getMessage())
                         .errorCode(errorType.getErrorCode())
                         .build());
     }
