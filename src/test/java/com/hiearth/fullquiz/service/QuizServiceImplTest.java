@@ -25,6 +25,23 @@ class QuizServiceImplTest {
 
 
 
+    @DisplayName("")
+    @Test
+    @Rollback(false)
+    void test(){
+
+        //given
+        Member member = Member.builder()
+                .nickname("nickname")
+                .numOfSolvedQuiz(0)
+                .build();
+        memberRepository.save(member);
+
+        //when
+
+        //then
+    }
+
 
     @DisplayName("")
     @Test
@@ -63,6 +80,34 @@ class QuizServiceImplTest {
 
         //when
         quizSevice.checkAnswer(1L, member.getId(), checkAnswerDTO);
+
+        //then
+    }
+
+
+    @DisplayName("")
+    @Test
+    void resumeQuiz(){
+
+        //given
+        Member member = Member.builder()
+                .nickname("nickname")
+                .numOfSolvedQuiz(0)
+                .build();
+
+        memberRepository.save(member);
+
+        quizSevice.getQuizzes(member.getId(), "재활용의 여정");
+
+        CheckAnswerDTO checkAnswerDTO1 = new CheckAnswerDTO(true, 4L, "O");
+
+        CheckAnswerDTO checkAnswerDTO2 = new CheckAnswerDTO(true, 4L, "O");
+
+        quizSevice.checkAnswer(1L, member.getId(), checkAnswerDTO1);
+        quizSevice.checkAnswer(2L, member.getId(), checkAnswerDTO2);
+
+        //when
+        List<QuizResponse> responses = quizSevice.resumeQuiz(member.getId());
 
         //then
     }

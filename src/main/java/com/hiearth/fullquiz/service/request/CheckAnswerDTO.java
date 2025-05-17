@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CheckAnswerDTO {
-    private boolean isCorrect;
+    private Boolean isCorrect;
     private Long categoryId;
     private String userAnswer;
 }

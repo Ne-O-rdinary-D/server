@@ -8,6 +8,7 @@ import com.hiearth.fullquiz.web.dto.CategoriesResponse;
 import com.hiearth.fullquiz.web.dto.QuizResponse;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,6 +19,7 @@ import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
+@Slf4j
 public class QuizServiceImpl implements QuizSevice{
 
     private final CategoryRepository categoryRepository;
@@ -29,6 +31,7 @@ public class QuizServiceImpl implements QuizSevice{
     @Override
     @Transactional
     public List<QuizResponse> getQuizzes(Long memberId, String categoryName) {
+
         Category category = categoryRepository.findByName(categoryName)
                 .orElseThrow(() -> new IllegalArgumentException("해당 카테고리가 없습니다."));
 
@@ -71,6 +74,8 @@ public class QuizServiceImpl implements QuizSevice{
     @Transactional
     public void checkAnswer(Long quizId, Long memberId, CheckAnswerDTO checkAnswerDTO) {
 
+        log.info("correct : {}" , checkAnswerDTO.getIsCorrect());
+
         Quiz quiz = quizRepository.findById(quizId).orElseThrow();
         Member member = memberRepository.findById(memberId).orElseThrow();
 
@@ -78,7 +83,7 @@ public class QuizServiceImpl implements QuizSevice{
                 MemberQuiz.builder()
                         .member(member)
                         .quiz(quiz)
-                        .isCorrect(checkAnswerDTO.isCorrect())
+                        .isCorrect(checkAnswerDTO.getIsCorrect())
                         .build()
         );
 
@@ -86,7 +91,22 @@ public class QuizServiceImpl implements QuizSevice{
                 .findByMemberIdAndCategoryId(memberId, checkAnswerDTO.getCategoryId())
                 .orElseThrow();
 
-        quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.isCorrect());
+        quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.getIsCorrect());
+    }
+
+    @Override
+    public List<QuizResponse> resumeQuiz(Long quizProgressId) {
+        QuizProgress quizProgress = quizProgressRepository.findById(quizProgressId).orElseThrow();
+        List<Quiz> quizzes = quizRepository.findAllById(quizProgress.getQuizIds());
+
+        List<QuizResponse> responses = new ArrayList<>();
+
+        for(int i = 0; i < quizzes.size(); i++) {
+            responses.add(
+                    QuizResponse.forResume(quizzes.get(i), quizProgress.getQuizAnswers().get(i))
+            );
+        }
+        return responses;
     }
 
     private List<Quiz> getRandomQuizzes(List<Quiz> quizzes) {

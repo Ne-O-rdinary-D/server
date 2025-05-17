@@ -31,6 +31,11 @@ public class QuizController {
         return ApiResponse.ok(null);
     }
 
+    @GetMapping("/api/quizzes/{quizProgressId}")
+    public ResponseEntity<?> resumeQuiz(@PathVariable("quizProgressId") Long quizProgressId) {
+        return ApiResponse.ok(quizService.resumeQuiz(quizProgressId));
+    }
+
     @GetMapping("/api/quizes/getCategories")
     public ResponseEntity<ApiResponse<List<CategoriesResponse>>> getCategories () {
         return ApiResponse.ok(quizService.getCategories());
