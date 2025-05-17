@@ -27,16 +27,16 @@
     "quizType": "AB",
     "answer": "A",
     "content": "폐형광등은 어디에 버려야 할까?",
-    "firstOption": "A. 마트 내 수거함",
-    "secondOption": "B. 일반 종량제봉투",
+    "firstOption": "마트 내 수거함",
+    "secondOption": "일반 종량제봉투",
     "explanation": "마트, 주민센터 등에 폐형광등 전용 수거함이 있어요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "이불 같은 대형 폐기물은?",
-    "firstOption": "A. 재활용 배출함",
-    "secondOption": "B. 스티커 붙여 지정 장소에 배출",
+    "firstOption": "재활용 배출함",
+    "secondOption": "스티커 붙여 지정 장소에 배출",
     "explanation": "대형 폐기물은 처리 스티커를 붙여야 해요."
   },
   {
@@ -67,16 +67,16 @@
     "quizType": "AB",
     "answer": "B",
     "content": "폐건전지는 어디에 버릴까?",
-    "firstOption": "A. 일반 쓰레기",
-    "secondOption": "B. 주민센터나 마트 내 수거함",
+    "firstOption": "일반 쓰레기",
+    "secondOption": "주민센터나 마트 내 수거함",
     "explanation": "중금속 유출을 막기 위해 지정 수거함을 이용해야 해요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "분리배출 장소는 보통 어디일까?",
-    "firstOption": "A. 공동주택 내 배출구역",
-    "secondOption": "B. 일반 쓰레기통 옆",
+    "firstOption": "공동주택 내 배출구역",
+    "secondOption": "일반 쓰레기통 옆",
     "explanation": "분리배출 전용 공간이 마련된 경우가 많아요."
   },
   {
@@ -91,8 +91,8 @@
     "quizType": "AB",
     "answer": "B",
     "content": "배터리가 부착된 전자기기는?",
-    "firstOption": "A. 그냥 버림",
-    "secondOption": "B. 전문 수거소에 위탁",
+    "firstOption": "그냥 버림",
+    "secondOption": "전문 수거소에 위탁",
     "explanation": "배터리 포함 기기는 분리 수거가 필요해요."
   },
   {
@@ -115,8 +115,8 @@
     "quizType": "AB",
     "answer": "A",
     "content": "깨진 유리는 어떻게 처리해야 할까?",
-    "firstOption": "A. 신문지에 감싸 일반 쓰레기",
-    "secondOption": "B. 유리병 수거함",
+    "firstOption": "신문지에 감싸 일반 쓰레기",
+    "secondOption": "유리병 수거함",
     "explanation": "깨진 유리는 재활용되지 않으며 안전하게 폐기해야 해요."
   },
   {
@@ -139,16 +139,16 @@
     "quizType": "AB",
     "answer": "B",
     "content": "이사할 때 가전제품은?",
-    "firstOption": "A. 아파트 분리함에 버림",
-    "secondOption": "B. 폐가전 무상수거 신청",
+    "firstOption": "아파트 분리함에 버림",
+    "secondOption": "폐가전 무상수거 신청",
     "explanation": "무상 방문 수거 서비스를 이용할 수 있어요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "우유팩은 어디에 버려야 할까?",
-    "firstOption": "A. 우유팩 전용 수거함",
-    "secondOption": "B. 일반 종이류 수거함",
+    "firstOption": "우유팩 전용 수거함",
+    "secondOption": "일반 종이류 수거함",
     "explanation": "일부 지역에는 우유팩 수거함이 따로 설치되어 있어요."
   },
   {

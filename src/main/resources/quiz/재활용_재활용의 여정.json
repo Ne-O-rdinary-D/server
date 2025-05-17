@@ -43,40 +43,40 @@
     "quizType": "AB",
     "answer": "B",
     "content": "재활용 마지막 단계는?",
-    "firstOption": "A. 쓰레기 수거",
-    "secondOption": "B. 제품 재생산",
+    "firstOption": "쓰레기 수거",
+    "secondOption": "제품 재생산",
     "explanation": "재활용은 새로운 제품으로 다시 쓰이는 것이 목표이에요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "라벨 제거가 필요한 재활용품은?",
-    "firstOption": "A. 페트병",
-    "secondOption": "B. 유리병",
+    "firstOption": "페트병",
+    "secondOption": "유리병",
     "explanation": "페트병은 자동 선별을 위해 라벨 제거가 필요해요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "캔과 병의 분류 방식은?",
-    "firstOption": "A. 동일하다",
-    "secondOption": "B. 다르다",
+    "firstOption": "동일하다",
+    "secondOption": "다르다",
     "explanation": "캔은 금속류, 병은 유리류로 분류돼요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "가장 먼저 이루어지는 공정은?",
-    "firstOption": "A. 분류",
-    "secondOption": "B. 세척",
+    "firstOption": "분류",
+    "secondOption": "세척",
     "explanation": "재활용품은 먼저 종류별로 분류돼요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "재활용 어려운 소재는?",
-    "firstOption": "A. 투명 비닐",
-    "secondOption": "B. 이물질 묻은 플라스틱",
+    "firstOption": "투명 비닐",
+    "secondOption": "이물질 묻은 플라스틱",
     "explanation": "오염된 플라스틱은 재활용이 불가능해요."
   },
   {
@@ -99,24 +99,24 @@
     "quizType": "AB",
     "answer": "A",
     "content": "페트병 분리 배출 방법은?",
-    "firstOption": "A. 라벨 제거 후 배출",
-    "secondOption": "B. 라벨 붙인 채 배출",
+    "firstOption": "라벨 제거 후 배출",
+    "secondOption": "라벨 붙인 채 배출",
     "explanation": "페트병은 라벨 제거 후 투명 상태로 배출해야 해요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "올바른 재활용은?",
-    "firstOption": "A. 이물질 있는 병",
-    "secondOption": "B. 깨끗한 플라스틱",
+    "firstOption": "이물질 있는 병",
+    "secondOption": "깨끗한 플라스틱",
     "explanation": "재활용품은 깨끗이 세척한 상태여야 해요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "분리수거가 필요한 쓰레기는?",
-    "firstOption": "A. 캔",
-    "secondOption": "B. 음식물",
+    "firstOption": "캔",
+    "secondOption": "음식물",
     "explanation": "음식물은 일반 쓰레기로 처리되며 캔은 재활용돼요."
   },
   {
@@ -131,8 +131,8 @@
     "quizType": "AB",
     "answer": "B",
     "content": "재활용품 운반 방법은?",
-    "firstOption": "A. 일반 비닐봉투",
-    "secondOption": "B. 투명한 봉투",
+    "firstOption": "일반 비닐봉투",
+    "secondOption": "투명한 봉투",
     "explanation": "재활용품은 투명 봉투에 담아야 분류가 용이해요."
   },
   {
@@ -155,8 +155,8 @@
     "quizType": "AB",
     "answer": "A",
     "content": "가장 바람직한 배출은?",
-    "firstOption": "A. 이물질 제거한 병",
-    "secondOption": "B. 음식물 남은 플라스틱",
+    "firstOption": "이물질 제거한 병",
+    "secondOption": "음식물 남은 플라스틱",
     "explanation": "깨끗한 상태의 병만이 재활용이 가능해요."
   }
 ]
