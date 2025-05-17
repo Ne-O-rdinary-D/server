@@ -14,13 +14,8 @@ public class MemberController {
     private final MemberService memberService;
 
     @GetMapping("/api/members")
-    public ResponseEntity<?> checkNickName(@RequestParam String nickname){
-        boolean exists = memberService.existsByNickname(nickname);
-        if (exists) {
-            return ApiResponse.ok("이미 존재하는 닉네임이에요");
-        } else {
-            return ApiResponse.notFound("사용 가능한 닉네임이에요");
-        }
+    public ResponseEntity<?> checkDuplicateNickname(@RequestParam String nickname) {
+        return ApiResponse.ok(memberService.existsByNickname(nickname));
     }
 
     @PostMapping("/api/members")
