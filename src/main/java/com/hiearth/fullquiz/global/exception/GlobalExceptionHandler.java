@@ -31,4 +31,5 @@ public class GlobalExceptionHandler {
         log.error("Exception: {}", ex.getMessage(), ex);
         return ApiResponse.error(ErrorType.DEFAULT_ERROR);
     }
+
 }
