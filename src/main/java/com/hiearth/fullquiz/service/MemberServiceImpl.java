@@ -31,4 +31,9 @@ public class MemberServiceImpl implements MemberService{
                         .build()
         );
     }
+
+    @Override
+    public Member findByNickname(String nickname) {
+        return memberRepository.findByNickname(nickname).orElseThrow();
+    }
 }
