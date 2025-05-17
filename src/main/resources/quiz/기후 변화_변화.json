@@ -1,0 +1,162 @@
+[
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "해수면 상승은 해안 도시 침수를 유발한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "해수면 상승은 저지대 도시의 침수 위험을 높입니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "기후변화는 농작물 수확량 감소를 초래할 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "가뭄, 폭우 등은 작물 생장에 영향을 줍니다."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "기후변화로 물 부족이 심화되는 이유는?",
+    "firstOption": "A. 강수량 증가",
+    "secondOption": "B. 강수의 불균형과 증발 증가",
+    "explanation": "가뭄과 증발 증가로 물 자원이 줄어듭니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "기후변화는 사람의 건강에는 큰 영향을 주지 않는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "폭염, 감염병 등 건강 위험이 증가합니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "기후난민은 기후로 인해 거주지를 떠난 사람들이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "기후 재해로 살던 곳을 떠난 사람들을 의미합니다."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "기후변화로 증가하는 질병은?",
+    "firstOption": "A. 열대 감염병",
+    "secondOption": "B. 시력 저하",
+    "explanation": "온난화로 인해 모기 등 매개체가 확산됩니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "기후변화는 동물의 서식지에 영향을 주지 않는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "기온 변화로 서식지가 사라지는 동물들이 많습니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "기후변화는 생물 다양성을 감소시킨다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "서식지 변화로 일부 종이 멸종 위기에 처합니다."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "기후변화로 가장 직접적인 피해를 입는 산업은?",
+    "firstOption": "A. 금융업",
+    "secondOption": "B. 농업",
+    "explanation": "기온과 강수 변화는 작물 생산에 직접적인 영향을 줍니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "기후변화는 수질 오염을 심화시킬 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "강수량 증가와 고온은 수질에 악영향을 미칩니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "기후변화는 인간의 삶에 거의 영향을 주지 않는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "식량, 물, 건강 등 삶의 전반에 영향을 줍니다."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "기후 변화로 인해 발생할 수 있는 재난은?",
+    "firstOption": "A. 가뭄과 폭염",
+    "secondOption": "B. 북극광 증가",
+    "explanation": "기온과 강수량 변화는 극단적 기후를 유발합니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "해양 생태계도 기후변화의 영향을 받는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "해수온 상승은 산호초 백화현상 등을 유발합니다."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "기후난민의 주요 발생 원인은?",
+    "firstOption": "A. 여행과 이사 증가",
+    "secondOption": "B. 기후 재해로 인한 주거지 상실",
+    "explanation": "홍수, 해수면 상승 등으로 살던 곳을 떠나게 됩니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "기후변화로 인한 문제는 모두 선진국에서 해결할 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "국가 간 대응 능력 격차가 커 피해는 불균형합니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "산호초는 기온 상승에 민감한 생물이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "온도 변화에 민감하여 백화현상이 발생합니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "기후변화는 인간의 정신건강에도 영향을 줄 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "재난 경험은 불안, 우울을 유발할 수 있습니다."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "기후 변화가 불러오는 장기적 피해는?",
+    "firstOption": "A. 생태계 붕괴",
+    "secondOption": "B. 잠시 더운 날씨",
+    "explanation": "기후변화는 서서히 생태계를 무너뜨릴 수 있습니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "기후변화로 해수면이 낮아지고 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "빙하가 녹아 해수면은 상승하고 있습니다."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "폭우와 폭염은 기후변화의 대표적인 피해 유형이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "이상기후로 인한 자연재해가 증가하고 있습니다."
+  }
+]
