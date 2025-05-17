@@ -23,6 +23,10 @@ public class Category extends BaseEntity{
     @JoinColumn(name = "parent_id")
     private Category parent;
 
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    @Builder.Default
+    private List<Quiz> quizzes = new ArrayList<>();
+
     @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
     @Builder.Default
     private List<Category> children = new ArrayList<>();
