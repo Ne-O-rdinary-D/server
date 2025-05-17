@@ -30,6 +30,7 @@ public class QuizServiceImpl implements QuizSevice{
     @Override
     @Transactional
     public List<QuizResponse> getQuizzes(Long memberId, String categoryName) {
+
         Category category = categoryRepository.findByName(categoryName)
                 .orElseThrow(() -> new IllegalArgumentException("해당 카테고리가 없습니다."));
 
@@ -72,6 +73,7 @@ public class QuizServiceImpl implements QuizSevice{
     @Transactional
     public void checkAnswer(Long quizId, Long memberId, CheckAnswerDTO checkAnswerDTO) {
 
+
         Quiz quiz = quizRepository.findById(quizId).orElseThrow();
         Member member = memberRepository.findById(memberId).orElseThrow();
 
@@ -79,7 +81,7 @@ public class QuizServiceImpl implements QuizSevice{
                 MemberQuiz.builder()
                         .member(member)
                         .quiz(quiz)
-                        .isCorrect(checkAnswerDTO.isCorrect())
+                        .isCorrect(checkAnswerDTO.getIsCorrect())
                         .build()
         );
 
@@ -87,7 +89,22 @@ public class QuizServiceImpl implements QuizSevice{
                 .findByMemberIdAndCategoryId(memberId, checkAnswerDTO.getCategoryId())
                 .orElseThrow();
 
-        quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.isCorrect());
+        quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.getIsCorrect());
+    }
+
+    @Override
+    public List<QuizResponse> resumeQuiz(Long quizProgressId) {
+        QuizProgress quizProgress = quizProgressRepository.findById(quizProgressId).orElseThrow();
+        List<Quiz> quizzes = quizRepository.findAllById(quizProgress.getQuizIds());
+
+        List<QuizResponse> responses = new ArrayList<>();
+
+        for(int i = 0; i < quizzes.size(); i++) {
+            responses.add(
+                    QuizResponse.forResume(quizzes.get(i), quizProgress.getQuizAnswers().get(i))
+            );
+        }
+        return responses;
     }
 
 
@@ -99,6 +116,8 @@ public class QuizServiceImpl implements QuizSevice{
                 .toList();
         return selectedQuizzes;
     }
+
+
 
     @Override
     public List<CategoriesResponse> getCategories() {

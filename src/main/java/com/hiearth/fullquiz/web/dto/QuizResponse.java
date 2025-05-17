@@ -1,9 +1,9 @@
 package com.hiearth.fullquiz.web.dto;
 
 import com.hiearth.fullquiz.domain.Quiz;
+import com.hiearth.fullquiz.domain.QuizAnswer;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 @Builder
@@ -14,8 +14,7 @@ public class QuizResponse {
     private String firstOption;
     private String secondOption;
     private String answer;
-    @Setter
-    private boolean isCorrect;
+    private Boolean isCorrect;
     private Integer index;
     private String explanation;
 
@@ -29,6 +28,19 @@ public class QuizResponse {
                 .isCorrect(false)
                 .index(index)
                 .explanation(quiz.getExplanation())
+                .build();
+    }
+
+    public static QuizResponse forResume(Quiz quiz, QuizAnswer quizAnswer) {
+        return QuizResponse.builder()
+                .id(quiz.getId())
+                .content(quiz.getContent())
+                .firstOption(quiz.getFirstOption())
+                .secondOption(quiz.getSecondOption())
+                .answer(quiz.getAnswer())
+                .explanation(quiz.getExplanation())
+                .isCorrect(quizAnswer.getIsCorrect())
+                .index(quizAnswer.getIndexNumber())
                 .build();
     }
 }

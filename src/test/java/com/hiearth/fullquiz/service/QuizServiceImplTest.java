@@ -25,6 +25,21 @@ class QuizServiceImplTest {
 
 
 
+    @DisplayName("")
+    @Test
+    void test(){
+
+        //given
+        Member member = Member.builder()
+                .nickname("nickname")
+                .build();
+        memberRepository.save(member);
+
+        //when
+
+        //then
+    }
+
 
     @DisplayName("")
     @Test
