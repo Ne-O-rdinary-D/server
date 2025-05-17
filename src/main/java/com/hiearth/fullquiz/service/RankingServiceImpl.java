@@ -1,5 +1,8 @@
 package com.hiearth.fullquiz.service;
 
+import com.hiearth.fullquiz.global.error.ErrorType;
+import com.hiearth.fullquiz.global.exception.FullquizException;
+import com.hiearth.fullquiz.repository.MemberRepository;
 import com.hiearth.fullquiz.repository.RankingRepository;
 import com.hiearth.fullquiz.web.dto.RankingResponse;
 import com.hiearth.fullquiz.web.dto.UserRanking;
@@ -14,8 +17,13 @@ import java.util.List;
 public class RankingServiceImpl implements RankingService{
 
     private final RankingRepository rankingRepository;
+    private final MemberRepository memberRepository;
     @Override
     public RankingResponse getRanking(String targetNickname) {
+
+        memberRepository.findByNickname(targetNickname).orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
+
+
         List<Object[]> rawResults = rankingRepository.findRankingRaw();
 
         List<UserRanking> rankings = new ArrayList<>();
