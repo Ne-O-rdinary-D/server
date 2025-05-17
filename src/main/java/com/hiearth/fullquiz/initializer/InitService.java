@@ -1,22 +1,65 @@
 package com.hiearth.fullquiz.initializer;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hiearth.fullquiz.domain.Category;
+import com.hiearth.fullquiz.domain.Quiz;
+import com.hiearth.fullquiz.domain.QuizType;
+import com.hiearth.fullquiz.initializer.dto.QuizDto;
 import com.hiearth.fullquiz.repository.CategoryRepository;
+import com.hiearth.fullquiz.repository.QuizRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 @Component
 @RequiredArgsConstructor
-public class CatetoryInitializer {
+public class InitService {
 
     private final CategoryRepository categoryRepository;
+    private final QuizRepository quizRepository;
+    private final ObjectMapper objectMapper;
+    private final ResourcePatternResolver resourcePatternResolver;
 
     @PostConstruct
-    public void init() {
+    public void init() throws IOException{
+        initCategory();
+        loadQuizData();
+    }
+
+    private void loadQuizData() throws IOException {
+
+        if (quizRepository.count() == 0) {
+            Resource[] files = resourcePatternResolver.getResources("classpath:quiz/*.json");
+
+            for (Resource file : files) {
+                String filename = file.getFilename(); // 예: "재활용_분리배출.json"
+                String[] parts = filename.replace(".json", "").split("_");
+                String rootName = parts[0]; // 재활용
+                String chapterName = parts[1]; // 분리배출
+
+                Category category = categoryRepository.findByName(chapterName)
+                        .orElseThrow(() -> new IllegalArgumentException("해당 카테고리 없음"));
+
+                List<QuizDto> dtos = objectMapper.readValue(file.getInputStream(), new TypeReference<>() {});
+                List<Quiz> quizzes = dtos.stream()
+                        .map(dto -> dto.toEntity(category))
+                        .toList();
+
+                quizRepository.saveAll(quizzes);
+            }
+        }
+    }
+
+    private void initCategory() {
         if (categoryRepository.count() == 0) {
+
             Category rcategory1 = Category.builder()
                     .name("재활용")
                     .build();
@@ -30,7 +73,6 @@ public class CatetoryInitializer {
             categoryRepository.saveAll(List.of(rcategory1, rcategory2, rcategory3));
 
             // 1. 재활용
-
             Category category1 = Category.builder()
                     .name("재활용의 여정")
                     .parent(rcategory1)
@@ -50,7 +92,7 @@ public class CatetoryInitializer {
 
             List<Category> categoriesForSave = List.of(category1, category2, category3, category4);
 
-            categoriesForSave.stream()
+            categoriesForSave
                     .forEach(child -> rcategory1.getChildren().add(child));
 
             categoryRepository.save(rcategory1);
@@ -73,8 +115,10 @@ public class CatetoryInitializer {
                     .name("변화")
                     .parent(rcategory2)
                     .build();
+
             List<Category> childWeatherCategories = List.of(category5, category6, category7, category8);
-            childWeatherCategories.stream()
+
+            childWeatherCategories
                     .forEach(child -> rcategory2.getChildren().add(child));
             categoryRepository.save(rcategory2);
 
@@ -96,8 +140,10 @@ public class CatetoryInitializer {
                     .name("실천")
                     .parent(rcategory3)
                     .build();
-            List.of(category9, category10, category11, category12).stream()
+
+            List.of(category9, category10, category11, category12)
                     .forEach(child -> rcategory3.getChildren().add(child));
+
             categoryRepository.save(rcategory3);
         }
     }
