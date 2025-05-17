@@ -15,7 +15,7 @@ public class QuizDto {
     private String explanation;
 
     public Quiz toEntity(Category category) {
-        return Quiz.builder()
+        Quiz quiz = Quiz.builder()
                 .quizType(quizType)
                 .answer(answer)
                 .content(content)
@@ -24,5 +24,8 @@ public class QuizDto {
                 .explanation(explanation)
                 .category(category)
                 .build();
+
+        category.getQuizzes().add(quiz);
+        return quiz;
     }
 }
