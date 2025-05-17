@@ -2,6 +2,7 @@ package com.hiearth.fullquiz.web.dto;
 
 import com.hiearth.fullquiz.domain.Quiz;
 import com.hiearth.fullquiz.domain.QuizAnswer;
+import com.hiearth.fullquiz.domain.QuizType;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -13,6 +14,7 @@ public class QuizResponse {
     private String content;
     private String firstOption;
     private String secondOption;
+    private QuizType quizType;
     private String answer;
     private Boolean isCorrect;
     private Integer index;
@@ -23,6 +25,7 @@ public class QuizResponse {
                 .id(quiz.getId())
                 .content(quiz.getContent())
                 .firstOption(quiz.getFirstOption())
+                .quizType(quiz.getQuizType())
                 .secondOption(quiz.getSecondOption())
                 .answer(quiz.getAnswer())
                 .isCorrect(false)
