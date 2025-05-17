@@ -14,7 +14,8 @@ public enum ErrorType {
     RESOURCE_NOT_FOUND(HttpStatus.NOT_FOUND, "00-002", "요청한 리소스를 찾을 수 없습니다."),
 
     // member (01)
-    USER_NOT_FOUND(HttpStatus.NOT_FOUND, "01-001", "사용자를 찾을 수 없습니다."),
+    MEMBER_NOT_FOUND(HttpStatus.NOT_FOUND, "01-001", "사용자를 찾을 수 없습니다."),
+    NICKNAME_DUPLICATED(HttpStatus.BAD_REQUEST, "01-002", "이미 존재하는 닉네임입니다."),
 
     ; // 커스텀 에러 작성
 
