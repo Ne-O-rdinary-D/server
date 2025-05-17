@@ -1,6 +1,7 @@
 package com.hiearth.fullquiz.global.exception;
 
 import com.hiearth.fullquiz.global.response.ApiResponse;
+import io.swagger.v3.oas.annotations.Hidden;
 import org.springframework.http.ResponseEntity;
 import com.hiearth.fullquiz.global.error.ErrorType;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -11,7 +12,8 @@ import org.springframework.web.servlet.resource.NoResourceFoundException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-//@RestControllerAdvice(basePackages = {"com.hiearth.fullquiz.web.controller"})
+@Hidden
+@RestControllerAdvice
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(FullquizException.class)
