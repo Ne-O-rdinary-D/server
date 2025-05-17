@@ -34,6 +34,7 @@ public class QuizResponse {
                 .build();
     }
 
+
     public static QuizResponse forResume(Quiz quiz, QuizAnswer quizAnswer) {
         return QuizResponse.builder()
                 .id(quiz.getId())
