@@ -5,6 +5,7 @@ import com.hiearth.fullquiz.domain.mapping.MemberQuiz;
 import com.hiearth.fullquiz.repository.*;
 import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
 import com.hiearth.fullquiz.web.dto.CategoriesResponse;
+import com.hiearth.fullquiz.web.dto.ContinueQuizResponse;
 import com.hiearth.fullquiz.web.dto.QuizResponse;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -89,6 +90,7 @@ public class QuizServiceImpl implements QuizSevice{
         quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.isCorrect());
     }
 
+
     private List<Quiz> getRandomQuizzes(List<Quiz> quizzes) {
         Collections.shuffle(quizzes);
 
@@ -120,6 +122,25 @@ public class QuizServiceImpl implements QuizSevice{
                 .toList();
 
         return new CategoriesResponse(parent.getId().intValue(), parent.getName(), children);
+    }
+
+    @Override
+    public ContinueQuizResponse continueQuiz(Long memberId, String category) {
+        QuizProgress qp = quizProgressRepository.findByMemberIdAndCategoryId(memberId, categoryRepository.findByName(category).get().getId()).orElseThrow();
+        int currentIdx = qp.getCurrentIndex();
+        List<Long> quiz = qp.getQuizIds();
+        List<QuizResponse> returnList = new ArrayList<>();
+        for(int i=0;i<5;i++) {
+            QuizResponse qr = QuizResponse.of(quizRepository.findById(quiz.get(i)).orElseThrow(), i);
+
+            if(currentIdx >= i) {
+                // 푼 문제
+                qr.setCorrect(memberQuizRepository.findByMemberIdAndQuizId(memberId, qr.getId()).isCorrect());
+            }
+            returnList.add(qr);
+        }
+
+        return new ContinueQuizResponse(currentIdx, returnList);
     }
 
 }

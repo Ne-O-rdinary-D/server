@@ -3,6 +3,7 @@ package com.hiearth.fullquiz.web.dto;
 import com.hiearth.fullquiz.domain.Quiz;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Builder
@@ -13,6 +14,7 @@ public class QuizResponse {
     private String firstOption;
     private String secondOption;
     private String answer;
+    @Setter
     private boolean isCorrect;
     private Integer index;
     private String explanation;
