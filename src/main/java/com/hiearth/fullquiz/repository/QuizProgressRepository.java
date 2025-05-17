@@ -12,5 +12,5 @@ public interface QuizProgressRepository extends JpaRepository<QuizProgress, Long
 //    List<QuizProgress> findByMemberId(Long memberId);
     Optional<QuizProgress> findByMemberIdAndCategoryId(Long memberId, Long categoryId);
 
-    Optional<QuizProgress> findByMemberIdAndNotIsCompleted(Long memberId);
+//    Optional<QuizProgress> findByMemberIdAndIsCompletedFalse(Long memberId);
 }
