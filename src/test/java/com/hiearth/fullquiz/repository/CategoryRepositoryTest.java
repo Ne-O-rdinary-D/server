@@ -32,4 +32,17 @@ class CategoryRepositoryTest {
 
         //then
     }
+
+
+    @DisplayName("")
+    @Test
+    void test(){
+
+        //given
+        Category cate = categoryRepository.findByName("재활용의 여정").orElseThrow();
+
+        //when
+
+        //then
+    }
 }
