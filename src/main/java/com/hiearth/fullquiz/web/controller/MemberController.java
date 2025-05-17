@@ -15,8 +15,7 @@ public class MemberController {
 
     @PostMapping("/api/members")
     public ResponseEntity<?> registerMember(@RequestBody MemberCreateDTO memberCreateDTO) {
-        memberService.findOrCreateMember(memberCreateDTO.getNickname());
-        return ApiResponse.created();
+        return ApiResponse.created(memberService.findOrCreateMember(memberCreateDTO.getNickname()));
     }
 
     @GetMapping("/api/members")

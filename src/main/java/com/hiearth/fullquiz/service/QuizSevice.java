@@ -2,6 +2,7 @@ package com.hiearth.fullquiz.service;
 
 import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
 import com.hiearth.fullquiz.web.dto.CategoriesResponse;
+import com.hiearth.fullquiz.web.dto.QuizProgressDTO;
 import com.hiearth.fullquiz.web.dto.QuizResponse;
 import com.hiearth.fullquiz.web.dto.StatusResponse;
 
@@ -15,4 +16,5 @@ public interface QuizSevice {
     List<QuizResponse> resumeQuiz(Long quizProgressId);
 
     List<StatusResponse> getMyStatus(String nickname);
+    QuizProgressDTO getQuizProgress(Long quizProgressId);
 }

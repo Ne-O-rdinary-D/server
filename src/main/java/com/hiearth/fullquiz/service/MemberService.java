@@ -1,9 +1,10 @@
 package com.hiearth.fullquiz.service;
 
 import com.hiearth.fullquiz.domain.Member;
+import com.hiearth.fullquiz.web.dto.MemberResponse;
 
 public interface MemberService {
-    Member findOrCreateMember(String nickname);
+    MemberResponse findOrCreateMember(String nickname);
 
     Member findByNickname(String nickname);
 

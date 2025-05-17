@@ -7,6 +7,10 @@ import com.hiearth.fullquiz.global.exception.FullquizException;
 import com.hiearth.fullquiz.repository.*;
 import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
 import com.hiearth.fullquiz.web.dto.*;
+import com.hiearth.fullquiz.web.dto.CategoriesResponse;
+import com.hiearth.fullquiz.web.dto.ContinueQuizResponse;
+import com.hiearth.fullquiz.web.dto.QuizProgressDTO;
+import com.hiearth.fullquiz.web.dto.QuizResponse;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -106,6 +110,19 @@ public class QuizServiceImpl implements QuizSevice{
             );
         }
         return responses;
+    }
+
+    @Override
+    public QuizProgressDTO getQuizProgress(Long memnberId) {
+
+        QuizProgress quizProgress = quizProgressRepository.findByMemberId(memnberId).get(0);
+
+        Category category = categoryRepository.findById(quizProgress.getCategoryId())
+                .orElseThrow();
+
+        List<Category> children = categoryRepository.findByIdWithChildren(category.getParent().getId());
+
+        return QuizProgressDTO.create(quizProgress.getId(), category.getName(), children);
     }
 
     @Override

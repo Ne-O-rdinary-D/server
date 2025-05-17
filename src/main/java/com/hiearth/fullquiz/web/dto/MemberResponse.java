@@ -7,11 +7,13 @@ import lombok.Getter;
 public class MemberResponse {
     private Long id;
     private String nickname;
-    private int quizNum;
+    private int numOfSolvedQuizzes;
 
-    public MemberResponse(Member member) {
-        this.id = member.getId();
-        this.nickname = member.getNickname();
-        this.quizNum = member.getNumOfSolvedQuiz();
+    public static MemberResponse from(Member member) {
+        MemberResponse memberResponse = new MemberResponse();
+        memberResponse.nickname = member.getNickname();
+        memberResponse.id = member.getId();
+        memberResponse.numOfSolvedQuizzes = member.getNumOfSolvedQuiz();
+        return memberResponse;
     }
 }

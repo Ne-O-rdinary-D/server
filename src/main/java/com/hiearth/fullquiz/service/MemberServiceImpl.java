@@ -4,6 +4,7 @@ import com.hiearth.fullquiz.domain.Member;
 import com.hiearth.fullquiz.global.error.ErrorType;
 import com.hiearth.fullquiz.global.exception.FullquizException;
 import com.hiearth.fullquiz.repository.MemberRepository;
+import com.hiearth.fullquiz.web.dto.MemberResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,17 +20,20 @@ public class MemberServiceImpl implements MemberService{
 
     @Transactional
     @Override
-    public Member findOrCreateMember(String nickname) {
+    public MemberResponse findOrCreateMember(String nickname) {
+
         Optional<Member> member = memberRepository.findByNickname(nickname);
         if (member.isPresent()) {
             throw new FullquizException(ErrorType.NICKNAME_DUPLICATED);
         }
-        return memberRepository.save(
-                Member.builder()
-                        .nickname(nickname)
-                        .numOfSolvedQuiz(0)
-                        .build()
-        );
+        Member member1 = Member.builder()
+                .nickname(nickname)
+                .numOfSolvedQuiz(0)
+                .build();
+
+        memberRepository.save(member1);
+
+        return MemberResponse.from(member1);
     }
 
     @Override
