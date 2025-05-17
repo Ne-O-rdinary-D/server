@@ -2,161 +2,161 @@
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "지구의 평균 기온은 점점 상승하고 있다.",
+    "content": "지난 100년간 지구 평균 기온은 꾸준히 상승하고 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기후변화로 인해 지구 온도는 꾸준히 상승 중입니다."
+    "explanation": "산업혁명 이후 온실가스 증가로 지구 기온은 뚜렷하게 상승하고 있어요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "기후 변화는 특정 지역에만 영향을 미친다.",
+    "content": "기후 변화는 일부 지역이 아닌 전 세계에 영향을 미친다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기후 변화는 전 세계적인 현상입니다."
+    "explanation": "지구 전체가 연결되어 있어 어느 한 지역의 문제가 아니에요."
   },
   {
     "quizType": "AB",
     "answer": "B",
-    "content": "최근 폭염, 한파와 같은 이상기후 현상은?",
-    "firstOption": "A. 자연적인 순환",
-    "secondOption": "B. 기후변화의 영향",
-    "explanation": "이상기후는 주로 온실가스 증가로 발생합니다."
+    "content": "폭염과 한파는 어떤 원인으로 발생하나요?",
+    "firstOption": "자연적인 순환",
+    "secondOption": "기후변화의 영향",
+    "explanation": "이상기후는 온실가스 증가와 관련이 깊은 기후변화의 영향이에요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후 변화로 인해 가뭄과 홍수가 잦아진다.",
+    "content": "기후 변화는 강수량 불균형으로 가뭄과 홍수를 초래한다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기후 변화는 극단적 날씨를 증가시킵니다."
+    "explanation": "기온 상승은 대기의 순환을 바꿔 극단적 날씨를 자주 발생시켜요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "겨울이 추워진 건 지구 온난화와 무관하다.",
+    "content": "겨울철 추위도 기후 변화와 관련이 있을 수 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기온 변화로 인해 겨울 기온 변동도 심해집니다."
+    "explanation": "온난화는 대기의 흐름을 바꿔 한파 등 이상기온을 유발할 수 있어요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기후변화로 녹는 대표적인 지역은?",
-    "firstOption": "A. 북극",
-    "secondOption": "B. 사하라사막",
-    "explanation": "북극의 해빙은 기후변화의 상징입니다."
+    "content": "기후변화로 가장 눈에 띄게 얼음이 녹는 지역은 어디인가?",
+    "firstOption": "북극",
+    "secondOption": "사하라사막",
+    "explanation": "북극의 해빙은 기후변화로 인한 대표적인 환경 변화 사례에요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후 변화는 생물의 서식지에 영향을 준다.",
+    "content": "기후 변화로 생물들이 기존 서식지를 잃는 경우가 많다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기온 변화는 생물의 서식지를 파괴할 수 있습니다."
+    "explanation": "기온 변화로 서식지가 파괴되어 생물 다양성에 큰 영향을 줘요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "산불 발생과 기후 변화는 관련이 없다.",
+    "content": "기온 상승으로 산불 발생 빈도도 함께 높아지고 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기후 변화는 고온·건조한 환경을 만들며 산불과 연관 있습니다."
+    "explanation": "기후 변화는 고온 건조한 날씨를 만들고 산불 발생을 증가시켜요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기온 상승으로 빙하가 녹으면?",
-    "firstOption": "A. 해수면 상승",
-    "secondOption": "B. 산불 증가",
-    "explanation": "빙하가 녹으면 해수면이 높아집니다."
+    "content": "기후변화로 인한 빙하 융해는 어떤 현상을 일으킬까?",
+    "firstOption": "해수면 상승",
+    "secondOption": "산불 증가",
+    "explanation": "빙하가 녹으며 해수면이 상승해 저지대 침수 피해가 증가해요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후 변화로 식물의 생장 시기가 달라진다.",
+    "content": "기온 변화로 꽃이 피는 시기나 농작물 수확 시기도 달라질 수 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "온도 변화는 개화와 생장 시기에도 영향을 줍니다."
+    "explanation": "기온과 일조량 변화로 식물 생장 주기와 농사 일정에 영향을 줘요."
   },
   {
     "quizType": "AB",
     "answer": "B",
-    "content": "온실가스 증가 원인은?",
-    "firstOption": "A. 자연 화산 폭발",
-    "secondOption": "B. 인간 활동",
-    "explanation": "산업화 이후 인간 활동이 온실가스 주범입니다."
+    "content": "다음 중 온실가스를 가장 많이 발생시키는 주된 원인은 무엇인가?",
+    "firstOption": "자연 화산 폭발",
+    "secondOption": "인간 활동",
+    "explanation": "인간의 산업 활동이 화석연료 사용을 늘리며 온실가스를 배출해요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "열대야 현상은 기온 상승의 대표적 예이다.",
+    "content": "한밤중에도 기온이 높아 잠들기 어려운 열대야는?",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기온이 낮지 않아 밤에도 더운 열대야가 지속됩니다."
+    "explanation": "열대야는 여름철 기온 상승으로 인해 밤에도 온도가 내려가지 않는 현상이에요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "기온 상승은 해양에는 영향을 주지 않는다.",
+    "content": "지구 온도가 올라가면 바닷물의 온도도 변할 수 있을까?",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기온 상승은 해수온도에도 영향을 미칩니다."
+    "explanation": "기온 상승은 해양 생태계에도 영향을 주며 해수온도 상승을 유발해요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기후변화가 가장 빠르게 나타나는 곳은?",
-    "firstOption": "A. 극지방",
-    "secondOption": "B. 적도",
-    "explanation": "극지방은 온도 상승 속도가 가장 빠른 지역입니다."
+    "content": "기후변화의 영향이 가장 빠르게 관측되는 지역은 어디일까?",
+    "firstOption": "극지방",
+    "secondOption": "적도",
+    "explanation": "극지방은 온도 상승 속도가 빨라 해빙과 생물 변화가 두드러져요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "폭염 일수가 증가하는 것도 기후 변화의 징후이다.",
+    "content": "매년 더워지는 날이 늘어나는 것은 기후 변화와 관련이 있을까?",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "폭염은 기온 상승의 직접적인 결과입니다."
+    "explanation": "폭염 일수 증가는 온실가스 증가로 인한 지구 온난화의 징후에요."
   },
   {
     "quizType": "AB",
     "answer": "B",
-    "content": "기후변화에 민감한 산업은?",
-    "firstOption": "A. 통신",
-    "secondOption": "B. 농업",
-    "explanation": "기온과 강수량 변화는 농작물 생산에 큰 영향을 줍니다."
+    "content": "기후 조건 변화에 가장 큰 영향을 받는 산업 분야?",
+    "firstOption": "통신",
+    "secondOption": "농업",
+    "explanation": "농업은 기온과 강수량 변화에 민감해 생산성에 큰 영향을 받아요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후 변화로 인해 일부 질병도 확산될 수 있다.",
+    "content": "기온 상승으로 새로운 감염병이나 질병이 퍼질 수 있을까?",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "온난화로 열대성 질병이 확산될 수 있습니다."
+    "explanation": "온난화로 열대성 질병이 확산되고 해충의 활동 범위도 넓어져요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "기후변화는 매우 느리게 진행되어 체감할 수 없다.",
+    "content": "최근 기후 변화는 느리게 진행되어 우리가 느끼기 어렵다고 할 수 있을까?",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "최근 급격한 이상기후로 변화가 체감되고 있습니다."
+    "explanation": "폭염, 한파 등 이상기후는 이미 우리 생활 속에서 체감되고 있어요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후 변화는 인간의 생활 방식까지 바꾼다.",
+    "content": "기후 변화는 인간의 에너지 소비나 생활 습관에도 영향을 줄 수 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "냉방 사용, 에너지 소비 방식이 달라집니다."
+    "explanation": "냉방기기 사용, 식량 생산, 이동수단 등 다양한 변화가 나타나고 있어요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기후 변화와 관련된 국제 협약은?",
-    "firstOption": "A. 파리협정",
-    "secondOption": "B. 세계보건규약",
-    "explanation": "파리협정은 지구 온도 상승 억제를 목표로 합니다."
+    "content": "기후 변화 대응을 위해 전 세계가 함께 맺은 협약은?",
+    "firstOption": "파리협정",
+    "secondOption": "세계보건규약",
+    "explanation": "파리협정은 온실가스를 줄이기 위한 전 세계적 노력의 상징이에요."
   }
 ]

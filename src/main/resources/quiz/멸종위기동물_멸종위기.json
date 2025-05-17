@@ -1,0 +1,162 @@
+[
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "멸종위기 동물은 지구 생태계의 균형과 밀접한 관련이 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "멸종위기종은 먹이사슬과 생태계 유지에 중요한 역할을 해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종위기 동물은 모두 인간 활동과 무관하게 줄어들었다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "서식지 파괴, 남획 등 인간의 영향이 주요 원인 중 하나예요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "멸종위기종 보호의 주요 목적은 무엇일까?",
+    "firstOption": "동물원 전시",
+    "secondOption": "생물 다양성 보존",
+    "explanation": "다양한 생물이 함께 살아야 생태계가 건강하게 유지돼요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "불법 밀렵은 멸종위기 동물이 줄어드는 주요 원인이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "코뿔소, 호랑이 등은 뿔, 가죽 등을 노린 밀렵으로 고통받아요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종위기 동물은 외국에만 존재하며 우리나라에는 없다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "반달가슴곰, 수달 등 우리나라에도 많은 멸종위기종이 있어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "다음 중 멸종위기 야생동물 1급에 해당하는 것은?",
+    "firstOption": "반달가슴곰",
+    "secondOption": "고라니",
+    "explanation": "반달가슴곰은 매우 희귀하여 보호가 필요한 야생동물이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "서식지 파괴는 멸종위기종 증가의 가장 큰 원인 중 하나이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "숲을 없애거나 하천을 개발하면 동물들이 살 곳을 잃어요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종위기종 복원은 자연 상태가 아닌 실험실에서만 가능하다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "복원은 야생 방사, 보호구역 설정 등 다양한 방식이 있어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "멸종위기종 증가를 막기 위한 가장 효과적인 방법은?",
+    "firstOption": "동물원 확대",
+    "secondOption": "서식지 보전",
+    "explanation": "자연 상태에서 살 수 있도록 서식지를 지키는 것이 중요해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "멸종위기종 보호는 우리 삶의 질과도 관련이 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "건강한 생태계는 깨끗한 공기와 물, 식량을 제공해줘요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "세계자연보전연맹은 멸종위기 동물과는 관련이 없다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "IUCN은 적색목록을 만들어 멸종위기종을 분류하고 관리해요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "멸종위기 동물 보호 캠페인에 해당하는 행동은?",
+    "firstOption": "불법 야생동물 제품 불매",
+    "secondOption": "멸종 동물 전시 관람",
+    "explanation": "야생동물 제품 소비를 줄이는 것이 멸종 방지에 효과적이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "기후 변화도 멸종위기 동물의 생존을 위협할 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "기온 상승으로 서식지가 바뀌어 살아남기 힘들어져요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종위기 동물은 수명이 짧기 때문에 멸종된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "주된 원인은 환경 변화와 인간의 활동이에요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 멸종위기 동물과 가장 관련이 있는 기관은?",
+    "firstOption": "세계보건기구",
+    "secondOption": "세계자연보전연맹",
+    "explanation": "IUCN은 멸종위기종 목록을 관리하며 보호 활동을 해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "적색목록은 멸종위기 동물을 분류하는 국제 기준이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "IUCN에서 멸종 위험도를 나타내는 기준으로 활용해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "사람과 가까운 도시에 사는 동물은 멸종 위험이 없다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "도시에서도 교통사고나 소음 등으로 멸종위험이 커질 수 있어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "야생에서 다시 살 수 있도록 멸종위기종을 방사하는 것은?",
+    "firstOption": "야생 방사",
+    "secondOption": "동물 이송",
+    "explanation": "야생 방사는 보호한 개체를 자연으로 돌려보내는 것을 말해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "인간은 멸종위기종을 보호할 책임이 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "사라지는 생물들을 보호하는 것은 미래 세대를 위한 책임이에요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "멸종위기종이 사라지면 생태계에 어떤 영향이 큰 문제일까?",
+    "firstOption": "풍경이 단조로워짐",
+    "secondOption": "먹이사슬 붕괴",
+    "explanation": "멸종은 생태계 균형을 무너뜨리고 다른 생물에도 영향을 줘요."
+  }
+]
