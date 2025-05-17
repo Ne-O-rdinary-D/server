@@ -5,6 +5,8 @@ import com.hiearth.fullquiz.global.error.ErrorType;
 import com.hiearth.fullquiz.global.exception.FullquizException;
 import com.hiearth.fullquiz.repository.MemberRepository;
 import com.hiearth.fullquiz.web.dto.MemberResponse;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

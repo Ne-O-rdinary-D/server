@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 public class MemberRequest {
 
     @NotBlank(message = "닉네임은 필수입니다.")
-    @Size(max = 15, message = "닉네임은 15자 이하로 입력해주세요.")
+    @Size(min = 2, max = 7, message = "닉네임은 2자 이상, 7자 이하로 입력해주세요.")
     private String nickname;
 }
