@@ -1,9 +1,8 @@
 package com.hiearth.fullquiz.web.controller;
 
-import com.hiearth.fullquiz.domain.Member;
+import com.hiearth.fullquiz.global.response.ApiResponse;
 import com.hiearth.fullquiz.service.MemberService;
-import com.hiearth.fullquiz.web.dto.MemberRequest;
-import com.hiearth.fullquiz.web.dto.MemberResponse;
+import com.hiearth.fullquiz.service.request.MemberCreateDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,9 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class MemberController {
     private final MemberService memberService;
 
-    @PostMapping("/member/login")
-    public ResponseEntity<MemberResponse> login(@RequestBody MemberRequest request) {
-        Member member = memberService.findOrCreateMember(request.getNickname());
-        return ResponseEntity.ok(new MemberResponse(member));
+    @PostMapping("/api/members")
+    public ResponseEntity<?> registerMember(@RequestBody MemberCreateDTO memberCreateDTO) {
+        memberService.findOrCreateMember(memberCreateDTO.getNickname());
+        return ApiResponse.created();
     }
+
+
 }

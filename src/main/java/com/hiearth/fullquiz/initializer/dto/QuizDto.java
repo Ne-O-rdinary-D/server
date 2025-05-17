@@ -7,6 +7,7 @@ import lombok.Getter;
 
 @Getter
 public class QuizDto {
+
     private QuizType quizType;
     private String answer;
     private String content;

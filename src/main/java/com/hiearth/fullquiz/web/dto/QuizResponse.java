@@ -13,15 +13,19 @@ public class QuizResponse {
     private String firstOption;
     private String secondOption;
     private String answer;
+    private boolean isCorrect;
+    private Integer index;
     private String explanation;
 
-    public static QuizResponse from(Quiz quiz) {
+    public static QuizResponse of(Quiz quiz, int index) {
         return QuizResponse.builder()
                 .id(quiz.getId())
                 .content(quiz.getContent())
                 .firstOption(quiz.getFirstOption())
                 .secondOption(quiz.getSecondOption())
                 .answer(quiz.getAnswer())
+                .isCorrect(false)
+                .index(index)
                 .explanation(quiz.getExplanation())
                 .build();
     }
