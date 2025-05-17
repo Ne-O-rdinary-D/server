@@ -17,6 +17,7 @@ public class Quiz extends BaseEntity{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     private QuizType quizType;
 
     private String answer;
