@@ -11,6 +11,12 @@ import java.util.List;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
+@Table(
+        name = "quiz_progress",
+        uniqueConstraints = {
+                @UniqueConstraint(columnNames = {"member_id", "category_id"})
+        }
+)
 public class QuizProgress {
 
     @Id
@@ -26,8 +32,8 @@ public class QuizProgress {
     @Builder.Default
     @ElementCollection
     @CollectionTable(
-            name = "quiz_progress_quiz", // 👈 원하는 테이블명 지정
-            joinColumns = @JoinColumn(name = "quiz_progress_id") // FK 명도 지정 가능
+            name = "quiz_progress_quiz",
+            joinColumns = @JoinColumn(name = "quiz_progress_id")
     )
     @Column(name = "quiz_id")
     private List<Long> quizIds = new ArrayList<>();

@@ -115,14 +115,16 @@ public class QuizServiceImpl implements QuizSevice{
     }
 
     @Override
-    public QuizProgressDTO getQuizProgress(Long memnberId) {
+    public QuizProgressDTO getQuizProgress(Long memberId) {
 
-        QuizProgress quizProgress = quizProgressRepository.findByMemberId(memnberId).get(0);
+        QuizProgress quizProgress = quizProgressRepository.findByMemberId(memberId).get(0);
 
         Category category = categoryRepository.findById(quizProgress.getCategoryId())
                 .orElseThrow();
 
-        List<Category> children = categoryRepository.findByIdWithChildren(category.getParent().getId());
+        List<Category> children = categoryRepository.findByParentId(category.getParent().getId());
+
+        System.out.println("category = " + category.getParent().getId());
 
         return QuizProgressDTO.create(quizProgress.getId(), category.getName(), children);
     }

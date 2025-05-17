@@ -5,6 +5,7 @@ import com.hiearth.fullquiz.service.MemberService;
 import com.hiearth.fullquiz.service.QuizSevice;
 import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
 import com.hiearth.fullquiz.web.dto.CategoriesResponse;
+import com.hiearth.fullquiz.web.dto.QuizProgressDTO;
 import com.hiearth.fullquiz.web.dto.StatusResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -40,6 +41,13 @@ public class QuizController {
         quizService.checkAnswer(quizId, memberService.findByNickname(nickname).getId(), checkAnswerDTO);
         return ApiResponse.ok(null);
     }
+
+    @GetMapping("/api/quizzes")
+    public ResponseEntity<?> getProgress(@RequestParam String nickname) {
+        QuizProgressDTO quizProgress = quizService.getQuizProgress(memberService.findByNickname(nickname).getId());
+        return ApiResponse.ok(quizProgress);
+    }
+
 
     @Operation(summary = "퀴즈 재개", description = "이전에 진행하던 카테고리 선택 시 퀴즈 리스트를 반환합니다.")
     @GetMapping("/api/quizzes/{quizProgressId}")

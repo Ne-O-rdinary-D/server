@@ -13,5 +13,5 @@ public interface QuizSevice {
     List<QuizResponse> resumeQuiz(Long quizProgressId);
 
     List<StatusResponse> getMyStatus(String nickname);
-    QuizProgressDTO getQuizProgress(Long quizProgressId);
+    QuizProgressDTO getQuizProgress(Long memberId);
 }
