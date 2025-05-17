@@ -26,6 +26,7 @@ public class MemberServiceImpl implements MemberService{
         if (member.isPresent()) {
             throw new FullquizException(ErrorType.NICKNAME_DUPLICATED);
         }
+
         Member member1 = Member.builder()
                 .nickname(nickname)
                 .numOfSolvedQuiz(0)
