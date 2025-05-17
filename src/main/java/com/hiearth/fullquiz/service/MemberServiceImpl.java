@@ -39,7 +39,7 @@ public class MemberServiceImpl implements MemberService{
 
     @Override
     public Member findByNickname(String nickname) {
-        return memberRepository.findByNickname(nickname).orElseThrow();
+        return memberRepository.findByNickname(nickname).orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
     }
 
     @Override
