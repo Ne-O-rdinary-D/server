@@ -9,6 +9,7 @@ import com.hiearth.fullquiz.web.dto.QuizProgressDTO;
 import com.hiearth.fullquiz.web.dto.StatusResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.constraints.Size;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +28,7 @@ public class QuizController {
 
     @Operation(summary = "퀴즈 불러오기", description = "카테고리 선택 시 퀴즈 리스트를 반환합니다.")
     @PostMapping("/api/members/{memberId}/quizzes")
-    public ResponseEntity<?> getQuizzes(@RequestParam String nickname,
+    public ResponseEntity<?> getQuizzes(@RequestParam @Size(min = 2, max = 7, message = "닉네임은 2자 이상, 7자 이하로 입력해주세요.") String nickname,
                                         @RequestParam("category") String category) {
         log.info("nickname : {} " + nickname);
         return ApiResponse.ok(quizService.getQuizzes(memberService.findByNickname(nickname).getId(), category));

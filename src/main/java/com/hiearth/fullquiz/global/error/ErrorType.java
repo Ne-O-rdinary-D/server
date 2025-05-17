@@ -17,6 +17,7 @@ public enum ErrorType {
     MEMBER_NOT_FOUND(HttpStatus.NOT_FOUND, "01-001", "사용자를 찾을 수 없습니다."),
     NICKNAME_DUPLICATED(HttpStatus.BAD_REQUEST, "01-002", "이미 존재하는 닉네임입니다."),
 
+
     // category (02)
     CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "02-001", "해당하는 카테고리가 존재하지 않습니다."),
     CHILD_CATEGORY_DOES_NOT_EXIXT(HttpStatus.NOT_FOUND, "02-002", "하위 카테고리가 존재하지 않습니다."),
@@ -26,6 +27,7 @@ public enum ErrorType {
 
     // quiz progress(04)
     NO_QUIZ_IN_PROGRESS(HttpStatus.BAD_REQUEST, "04-001", "진행중인 퀴즈가 없습니다."),
+
     ; // 커스텀 에러 작성
 
     private final HttpStatus status;

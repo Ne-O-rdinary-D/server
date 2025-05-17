@@ -25,6 +25,8 @@ import java.util.stream.Collectors;
 @Service
 //@AllArgsConstructor
 @RequiredArgsConstructor
+
+@Transactional
 public class QuizServiceImpl implements QuizSevice{
 
     private final CategoryRepository categoryRepository;
@@ -34,7 +36,6 @@ public class QuizServiceImpl implements QuizSevice{
     private final MemberRepository memberRepository;
 
     @Override
-    @Transactional
     public TotalQuizResponse getQuizzes(Long memberId, String categoryName) {
 
         Category category = categoryRepository.findByName(categoryName)
@@ -82,13 +83,14 @@ public class QuizServiceImpl implements QuizSevice{
     }
 
     @Override
-    @Transactional
     public void checkAnswer(Long quizId, Long memberId, CheckAnswerDTO checkAnswerDTO) {
+
 
         Quiz quiz = quizRepository.findById(quizId)
                 .orElseThrow(() -> new FullquizException(ErrorType.QUIZ_NOT_FOUND));
         Member member = memberRepository.findById(memberId)
                 .orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
+
 
         memberQuizRepository.save(
                 MemberQuiz.builder()
@@ -97,6 +99,7 @@ public class QuizServiceImpl implements QuizSevice{
                         .isCorrect(checkAnswerDTO.getIsCorrect())
                         .build()
         );
+
 
         List<QuizProgress> quizProgresses = quizProgressRepository
                 .findByMemberId(memberId);
@@ -111,9 +114,12 @@ public class QuizServiceImpl implements QuizSevice{
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<QuizResponse> resumeQuiz(Long quizProgressId) {
+
         QuizProgress quizProgress = quizProgressRepository.findById(quizProgressId)
                 .orElseThrow(() -> new FullquizException(ErrorType.NO_QUIZ_IN_PROGRESS));
+
         List<Quiz> quizzes = quizRepository.findAllById(quizProgress.getQuizIds());
 
         if (quizzes.isEmpty()) {
@@ -131,7 +137,9 @@ public class QuizServiceImpl implements QuizSevice{
     }
 
     @Override
+    @Transactional(readOnly = true)
     public QuizProgressDTO getQuizProgress(Long memberId) {
+
 
         List<QuizProgress> quizProgresses = quizProgressRepository.findByMemberId(memberId);
         if(quizProgresses.isEmpty()){
@@ -153,6 +161,7 @@ public class QuizServiceImpl implements QuizSevice{
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<StatusResponse> getMyStatus(String nickname) {
         Member member = memberRepository.findByNickname(nickname)
                 .orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
