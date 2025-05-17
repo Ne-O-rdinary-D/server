@@ -4,6 +4,7 @@ import com.hiearth.fullquiz.global.response.ApiResponse;
 import com.hiearth.fullquiz.service.RankingService;
 import com.hiearth.fullquiz.web.dto.CategoriesResponse;
 import com.hiearth.fullquiz.web.dto.RankingResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@Tag(name = "Ranking", description = "랭킹 관련 API")
 @RestController
 @RequestMapping("/api/ranking")
 @RequiredArgsConstructor

@@ -2,11 +2,11 @@ package com.hiearth.fullquiz.service;
 
 import com.hiearth.fullquiz.domain.*;
 import com.hiearth.fullquiz.domain.mapping.MemberQuiz;
+import com.hiearth.fullquiz.global.error.ErrorType;
+import com.hiearth.fullquiz.global.exception.FullquizException;
 import com.hiearth.fullquiz.repository.*;
 import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
-import com.hiearth.fullquiz.web.dto.CategoriesResponse;
-import com.hiearth.fullquiz.web.dto.ContinueQuizResponse;
-import com.hiearth.fullquiz.web.dto.QuizResponse;
+import com.hiearth.fullquiz.web.dto.*;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -107,6 +108,57 @@ public class QuizServiceImpl implements QuizSevice{
         return responses;
     }
 
+    @Override
+    public List<StatusResponse> getMyStatus(String nickname) {
+        Member member = memberRepository.findByNickname(nickname)
+                .orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
+
+        List<Category> topCategories = categoryRepository.findAll().stream()
+                .filter(c -> c.getParent() == null)
+                .toList();
+
+        return topCategories.stream()
+                .map(parent -> {
+                    List<StatusResponse.ChildrenCategories> childStatuses = parent.getChildren().stream()
+                            .map(child -> {
+                                Optional<QuizProgress> progressOpt = quizProgressRepository
+                                        .findByMemberIdAndCategoryId(member.getId(), child.getId());
+
+                                Status status = mapProgressToStatus(progressOpt);
+
+                                return new StatusResponse.ChildrenCategories(
+                                        child.getId().intValue(),
+                                        child.getName(),
+                                        status
+                                );
+                            })
+                            .toList();
+
+                    StatusResponse response = new StatusResponse();
+                    response.setCategoryId(parent.getId().intValue());
+                    response.setParentTitle(parent.getName());
+                    response.setChildrenCategoriesList(childStatuses);
+                    return response;
+                })
+                .toList();
+    }
+
+    private Status mapProgressToStatus(Optional<QuizProgress> progressOpt) {
+        if (progressOpt.isEmpty()) {
+            return Status.INACTIVATED;
+        }
+
+        QuizProgress progress = progressOpt.get();
+        if (progress.isCompleted()) {
+            return Status.ENDED;
+        }
+
+        if (progress.getCurrentIndex() > 0) {
+            return Status.ACTIVATED;
+        }
+
+        return Status.INACTIVATED;
+    }
 
     private List<Quiz> getRandomQuizzes(List<Quiz> quizzes) {
         Collections.shuffle(quizzes);
