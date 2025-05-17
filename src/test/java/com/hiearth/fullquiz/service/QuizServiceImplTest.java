@@ -4,6 +4,7 @@ import com.hiearth.fullquiz.domain.Member;
 import com.hiearth.fullquiz.repository.MemberRepository;
 import com.hiearth.fullquiz.service.request.CheckAnswerDTO;
 import com.hiearth.fullquiz.web.dto.QuizResponse;
+import com.hiearth.fullquiz.web.dto.TotalQuizResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +54,7 @@ class QuizServiceImplTest {
         memberRepository.save(member);
 
         //when
-        List<QuizResponse> responses = quizSevice.getQuizzes(member.getId(), "재활용의 여정");
+        TotalQuizResponse totalQuizResponse = quizSevice.getQuizzes(member.getId(), "재활용의 여정");
 
         //then
     }
@@ -72,7 +73,7 @@ class QuizServiceImplTest {
 
         memberRepository.save(member);
 
-        CheckAnswerDTO checkAnswerDTO = new CheckAnswerDTO(true, 4L, "O");
+        CheckAnswerDTO checkAnswerDTO = new CheckAnswerDTO(true, "O");
 
         quizSevice.getQuizzes(member.getId(), "재활용의 여정");
 

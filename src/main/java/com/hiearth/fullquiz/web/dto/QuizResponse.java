@@ -40,6 +40,7 @@ public class QuizResponse {
                 .content(quiz.getContent())
                 .firstOption(quiz.getFirstOption())
                 .secondOption(quiz.getSecondOption())
+                .quizType(quiz.getQuizType())
                 .answer(quiz.getAnswer())
                 .explanation(quiz.getExplanation())
                 .isCorrect(quizAnswer.getIsCorrect())

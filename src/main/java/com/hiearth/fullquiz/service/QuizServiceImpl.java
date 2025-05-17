@@ -23,7 +23,8 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor
+//@AllArgsConstructor
+@RequiredArgsConstructor
 public class QuizServiceImpl implements QuizSevice{
 
     private final CategoryRepository categoryRepository;
@@ -37,9 +38,14 @@ public class QuizServiceImpl implements QuizSevice{
     public TotalQuizResponse getQuizzes(Long memberId, String categoryName) {
 
         Category category = categoryRepository.findByName(categoryName)
-                .orElseThrow(() -> new IllegalArgumentException("해당 카테고리가 없습니다."));
+                .orElseThrow(() -> new FullquizException(ErrorType.CATEGORY_NOT_FOUND));
 
         List<Quiz> quizzes = quizRepository.getQuizByCategoryId(category.getId());
+
+        if(quizzes.isEmpty()){
+            throw new FullquizException(ErrorType.QUIZ_NOT_FOUND);
+        }
+
         List<Quiz> selectedQuizzes = getRandomQuizzes(quizzes);
 
         QuizProgress quizProgress = QuizProgress.builder()
@@ -79,9 +85,10 @@ public class QuizServiceImpl implements QuizSevice{
     @Transactional
     public void checkAnswer(Long quizId, Long memberId, CheckAnswerDTO checkAnswerDTO) {
 
-
-        Quiz quiz = quizRepository.findById(quizId).orElseThrow();
-        Member member = memberRepository.findById(memberId).orElseThrow();
+        Quiz quiz = quizRepository.findById(quizId)
+                .orElseThrow(() -> new FullquizException(ErrorType.QUIZ_NOT_FOUND));
+        Member member = memberRepository.findById(memberId)
+                .orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
 
         memberQuizRepository.save(
                 MemberQuiz.builder()
@@ -91,18 +98,27 @@ public class QuizServiceImpl implements QuizSevice{
                         .build()
         );
 
-        QuizProgress quizProgress = quizProgressRepository
-                .findByMemberId(memberId).get(0);
+        List<QuizProgress> quizProgresses = quizProgressRepository
+                .findByMemberId(memberId);
+
+        if(quizProgresses.isEmpty()){
+            throw new FullquizException(ErrorType.NO_QUIZ_IN_PROGRESS);
+        }
 //                .findByMemberIdAndCategoryId(memberId, checkAnswerDTO.getCategoryId())
 //                .orElseThrow();
 
-        quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.getIsCorrect());
+        quizProgresses.get(0).solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.getIsCorrect());
     }
 
     @Override
     public List<QuizResponse> resumeQuiz(Long quizProgressId) {
-        QuizProgress quizProgress = quizProgressRepository.findById(quizProgressId).orElseThrow();
+        QuizProgress quizProgress = quizProgressRepository.findById(quizProgressId)
+                .orElseThrow(() -> new FullquizException(ErrorType.NO_QUIZ_IN_PROGRESS));
         List<Quiz> quizzes = quizRepository.findAllById(quizProgress.getQuizIds());
+
+        if (quizzes.isEmpty()) {
+            throw new FullquizException(ErrorType.QUIZ_NOT_FOUND);
+        }
 
         List<QuizResponse> responses = new ArrayList<>();
 
@@ -117,16 +133,23 @@ public class QuizServiceImpl implements QuizSevice{
     @Override
     public QuizProgressDTO getQuizProgress(Long memberId) {
 
-        QuizProgress quizProgress = quizProgressRepository.findByMemberId(memberId).get(0);
+        List<QuizProgress> quizProgresses = quizProgressRepository.findByMemberId(memberId);
+        if(quizProgresses.isEmpty()){
+            throw new FullquizException(ErrorType.NO_QUIZ_IN_PROGRESS);
+        }
 
-        Category category = categoryRepository.findById(quizProgress.getCategoryId())
-                .orElseThrow();
+        Category category = categoryRepository.findById(quizProgresses.get(0).getCategoryId())
+                .orElseThrow(() -> new FullquizException(ErrorType.CATEGORY_NOT_FOUND));
 
         List<Category> children = categoryRepository.findByParentId(category.getParent().getId());
 
+        if(children.isEmpty()){
+            throw new FullquizException(ErrorType.CHILD_CATEGORY_DOES_NOT_EXIXT);
+        }
+
         System.out.println("category = " + category.getParent().getId());
 
-        return QuizProgressDTO.create(quizProgress.getId(), category.getName(), children);
+        return QuizProgressDTO.create(quizProgresses.get(0).getId(), category.getName(), children);
     }
 
     @Override
