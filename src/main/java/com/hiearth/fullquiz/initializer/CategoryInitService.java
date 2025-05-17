@@ -82,19 +82,19 @@ public class CategoryInitService {
             // 3. 멸종 위기 동물
 
             Category category9 = Category.builder()
-                    .name("멸종 위기")
+                    .name("동물의특징과분류")
                     .parent(rcategory3)
                     .build();
             Category category10 = Category.builder()
-                    .name("위협")
+                    .name("멸종위기")
                     .parent(rcategory3)
                     .build();
             Category category11 = Category.builder()
-                    .name("생태계")
+                    .name("생태계관계")
                     .parent(rcategory3)
                     .build();
             Category category12 = Category.builder()
-                    .name("실천")
+                    .name("지표종")
                     .parent(rcategory3)
                     .build();
 
