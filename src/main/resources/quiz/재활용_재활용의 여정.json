@@ -5,8 +5,7 @@
     "content": "오염된 플라스틱도 모두 재활용된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "오염된 플라스틱은 재활용되지 않습니다.",
-    "category": 1
+    "explanation": "오염된 플라스틱은 재활용되지 않아요."
   },
   {
     "quizType": "OX",
@@ -14,8 +13,7 @@
     "content": "투명 페트병은 재활용이 가능하다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "투명 페트병은 분리 선별이 쉬워 재활용됩니다.",
-    "category": 1
+    "explanation": "투명 페트병은 분리 선별이 쉬워 재활용돼요."
   },
   {
     "quizType": "OX",
@@ -23,8 +21,7 @@
     "content": "종이컵은 일반 종이처럼 재활용된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "코팅된 종이컵은 일반 종이와 달리 재활용이 어렵습니다.",
-    "category": 1
+    "explanation": "코팅된 종이컵은 일반 종이와 달리 재활용이 어려워요."
   },
   {
     "quizType": "OX",
@@ -32,8 +29,7 @@
     "content": "플라스틱은 종류별로 분류해야 한다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "혼합 플라스틱은 재활용 품질을 낮춥니다.",
-    "category": 1
+    "explanation": "혼합 플라스틱은 재활용 품질을 낮춰요."
   },
   {
     "quizType": "OX",
@@ -41,8 +37,7 @@
     "content": "음식물 묻은 용기도 재활용된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "오염된 용기는 세척되지 않으면 재활용이 불가능합니다.",
-    "category": 1
+    "explanation": "오염된 용기는 세척되지 않으면 재활용이 불가능해요."
   },
   {
     "quizType": "AB",
@@ -50,8 +45,7 @@
     "content": "재활용 마지막 단계는?",
     "firstOption": "A. 쓰레기 수거",
     "secondOption": "B. 제품 재생산",
-    "explanation": "재활용은 새로운 제품으로 다시 쓰이는 것이 목표입니다.",
-    "category": 1
+    "explanation": "재활용은 새로운 제품으로 다시 쓰이는 것이 목표이에요."
   },
   {
     "quizType": "AB",
@@ -59,8 +53,7 @@
     "content": "라벨 제거가 필요한 재활용품은?",
     "firstOption": "A. 페트병",
     "secondOption": "B. 유리병",
-    "explanation": "페트병은 자동 선별을 위해 라벨 제거가 필요합니다.",
-    "category": 1
+    "explanation": "페트병은 자동 선별을 위해 라벨 제거가 필요해요."
   },
   {
     "quizType": "AB",
@@ -68,8 +61,7 @@
     "content": "캔과 병의 분류 방식은?",
     "firstOption": "A. 동일하다",
     "secondOption": "B. 다르다",
-    "explanation": "캔은 금속류, 병은 유리류로 분류됩니다.",
-    "category": 1
+    "explanation": "캔은 금속류, 병은 유리류로 분류돼요."
   },
   {
     "quizType": "AB",
@@ -77,8 +69,7 @@
     "content": "가장 먼저 이루어지는 공정은?",
     "firstOption": "A. 분류",
     "secondOption": "B. 세척",
-    "explanation": "재활용품은 먼저 종류별로 분류됩니다.",
-    "category": 1
+    "explanation": "재활용품은 먼저 종류별로 분류돼요."
   },
   {
     "quizType": "AB",
@@ -86,8 +77,7 @@
     "content": "재활용 어려운 소재는?",
     "firstOption": "A. 투명 비닐",
     "secondOption": "B. 이물질 묻은 플라스틱",
-    "explanation": "오염된 플라스틱은 재활용이 불가능합니다.",
-    "category": 1
+    "explanation": "오염된 플라스틱은 재활용이 불가능해요."
   },
   {
     "quizType": "OX",
@@ -95,8 +85,7 @@
     "content": "모든 플라스틱은 동일하게 처리된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "플라스틱마다 성질이 달라 분리 처리됩니다.",
-    "category": 1
+    "explanation": "플라스틱마다 성질이 달라 분리 처리돼요."
   },
   {
     "quizType": "OX",
@@ -104,8 +93,7 @@
     "content": "코팅된 종이는 일반 종이와 같다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "코팅지와 일반 종이는 분리 배출 대상입니다.",
-    "category": 1
+    "explanation": "코팅지와 일반 종이는 분리 배출 대상이에요."
   },
   {
     "quizType": "AB",
@@ -113,8 +101,7 @@
     "content": "페트병 분리 배출 방법은?",
     "firstOption": "A. 라벨 제거 후 배출",
     "secondOption": "B. 라벨 붙인 채 배출",
-    "explanation": "페트병은 라벨 제거 후 투명 상태로 배출해야 합니다.",
-    "category": 1
+    "explanation": "페트병은 라벨 제거 후 투명 상태로 배출해야 해요."
   },
   {
     "quizType": "AB",
@@ -122,8 +109,7 @@
     "content": "올바른 재활용은?",
     "firstOption": "A. 이물질 있는 병",
     "secondOption": "B. 깨끗한 플라스틱",
-    "explanation": "재활용품은 깨끗이 세척한 상태여야 합니다.",
-    "category": 1
+    "explanation": "재활용품은 깨끗이 세척한 상태여야 해요."
   },
   {
     "quizType": "AB",
@@ -131,8 +117,7 @@
     "content": "분리수거가 필요한 쓰레기는?",
     "firstOption": "A. 캔",
     "secondOption": "B. 음식물",
-    "explanation": "음식물은 일반 쓰레기로 처리되며 캔은 재활용됩니다.",
-    "category": 1
+    "explanation": "음식물은 일반 쓰레기로 처리되며 캔은 재활용돼요."
   },
   {
     "quizType": "OX",
@@ -140,8 +125,7 @@
     "content": "재활용은 자원 절약에 도움이 된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "재활용은 천연 자원 사용량을 줄이는 데 기여합니다.",
-    "category": 1
+    "explanation": "재활용은 천연 자원 사용량을 줄이는 데 기여해요."
   },
   {
     "quizType": "AB",
@@ -149,8 +133,7 @@
     "content": "재활용품 운반 방법은?",
     "firstOption": "A. 일반 비닐봉투",
     "secondOption": "B. 투명한 봉투",
-    "explanation": "재활용품은 투명 봉투에 담아야 분류가 용이합니다.",
-    "category": 1
+    "explanation": "재활용품은 투명 봉투에 담아야 분류가 용이해요."
   },
   {
     "quizType": "OX",
@@ -158,8 +141,7 @@
     "content": "모든 유리병은 재활용 가능하다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "깨진 유리병은 안전 문제로 재활용되지 않습니다.",
-    "category": 1
+    "explanation": "깨진 유리병은 안전 문제로 재활용되지 않아요."
   },
   {
     "quizType": "OX",
@@ -167,8 +149,7 @@
     "content": "재활용에도 세척이 중요하다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "세척된 재활용품은 품질 유지에 도움을 줍니다.",
-    "category": 1
+    "explanation": "세척된 재활용품은 품질 유지에 도움을 줘요."
   },
   {
     "quizType": "AB",
@@ -176,7 +157,6 @@
     "content": "가장 바람직한 배출은?",
     "firstOption": "A. 이물질 제거한 병",
     "secondOption": "B. 음식물 남은 플라스틱",
-    "explanation": "깨끗한 상태의 병만이 재활용이 가능합니다.",
-    "category": 1
+    "explanation": "깨끗한 상태의 병만이 재활용이 가능해요."
   }
 ]

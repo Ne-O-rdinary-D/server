@@ -63,4 +63,12 @@ public class ApiResponse<T> {
                         .build());
     }
 
+    public static <T> ResponseEntity<ApiResponse<T>> notFound(String message) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body(ApiResponse.<T>builder()
+                        .status(HttpStatus.NOT_FOUND.value())
+                        .message(message)
+                        .build());
+    }
+
 }

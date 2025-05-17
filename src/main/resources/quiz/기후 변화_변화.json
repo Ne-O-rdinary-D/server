@@ -2,161 +2,161 @@
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "해수면 상승은 해안 도시 침수를 유발한다.",
+    "content": "대기 중 이산화탄소 농도 증가는 온실효과를 유발하는 주요 원인이다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "해수면 상승은 저지대 도시의 침수 위험을 높입니다."
-  },
-  {
-    "quizType": "OX",
-    "answer": "O",
-    "content": "기후변화는 농작물 수확량 감소를 초래할 수 있다.",
-    "firstOption": "O",
-    "secondOption": "X",
-    "explanation": "가뭄, 폭우 등은 작물 생장에 영향을 줍니다."
-  },
-  {
-    "quizType": "AB",
-    "answer": "B",
-    "content": "기후변화로 물 부족이 심화되는 이유는?",
-    "firstOption": "A. 강수량 증가",
-    "secondOption": "B. 강수의 불균형과 증발 증가",
-    "explanation": "가뭄과 증발 증가로 물 자원이 줄어듭니다."
+    "explanation": "이산화탄소는 지구의 평균 기온 상승을 일으키는 가장 대표적인 온실가스이에요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "기후변화는 사람의 건강에는 큰 영향을 주지 않는다.",
+    "content": "자동차에서 나오는 배기가스는 지구 온난화에 영향을 주지 않는다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "폭염, 감염병 등 건강 위험이 증가합니다."
-  },
-  {
-    "quizType": "OX",
-    "answer": "O",
-    "content": "기후난민은 기후로 인해 거주지를 떠난 사람들이다.",
-    "firstOption": "O",
-    "secondOption": "X",
-    "explanation": "기후 재해로 살던 곳을 떠난 사람들을 의미합니다."
+    "explanation": "자동차 배출가스는 이산화탄소, 질소산화물 등 다양한 온실가스를 포함해요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기후변화로 증가하는 질병은?",
-    "firstOption": "A. 열대 감염병",
-    "secondOption": "B. 시력 저하",
-    "explanation": "온난화로 인해 모기 등 매개체가 확산됩니다."
-  },
-  {
-    "quizType": "OX",
-    "answer": "X",
-    "content": "기후변화는 동물의 서식지에 영향을 주지 않는다.",
-    "firstOption": "O",
-    "secondOption": "X",
-    "explanation": "기온 변화로 서식지가 사라지는 동물들이 많습니다."
+    "content": "음식물이 썩을 때 발생하는 온실가스로 가장 적절한 것은?",
+    "firstOption": "메탄",
+    "secondOption": "산소",
+    "explanation": "메탄은 지구온난화지수가 이산화탄소보다 훨씬 높은 강력한 온실가스에요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후변화는 생물 다양성을 감소시킨다.",
+    "content": "공장에서 나오는 검은 연기는 대기 중 오염물질 농도를 증가시킨다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "서식지 변화로 일부 종이 멸종 위기에 처합니다."
+    "explanation": "공장 굴뚝에서 나오는 가스는 미세먼지, 질소산화물 등으로 대기를 오염시켜요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "석탄, 석유와 같은 화석연료 사용이 기후 변화에 영향을 주지 않는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "화석연료는 연소 시 다량의 이산화탄소를 발생시켜 기후에 악영향을 미쳐요."
   },
   {
     "quizType": "AB",
     "answer": "B",
-    "content": "기후변화로 가장 직접적인 피해를 입는 산업은?",
-    "firstOption": "A. 금융업",
-    "secondOption": "B. 농업",
-    "explanation": "기온과 강수 변화는 작물 생산에 직접적인 영향을 줍니다."
+    "content": "다음 중 온실가스 배출량이 특히 높은 산업군은?",
+    "firstOption": "출판업",
+    "secondOption": "에너지 생산",
+    "explanation": "에너지 생산은 대부분 화석연료 기반이어서 탄소 배출량이 매우 많아요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "기후변화는 수질 오염을 심화시킬 수 있다.",
+    "content": "생활 쓰레기를 땅에 묻는 과정에서 온실가스가 발생한다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "강수량 증가와 고온은 수질에 악영향을 미칩니다."
+    "explanation": "매립지에서는 유기물 분해 과정에서 메탄과 같은 온실가스가 발생해요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "기후변화는 인간의 삶에 거의 영향을 주지 않는다.",
+    "content": "종이를 과도하게 사용하는 것이 온실가스 배출에 영향을 주지 않는다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "식량, 물, 건강 등 삶의 전반에 영향을 줍니다."
+    "explanation": "종이 제작과 폐기 과정은 많은 전기와 물, 연료를 소비해요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기후 변화로 인해 발생할 수 있는 재난은?",
-    "firstOption": "A. 가뭄과 폭염",
-    "secondOption": "B. 북극광 증가",
-    "explanation": "기온과 강수량 변화는 극단적 기후를 유발합니다."
+    "content": "다음 중 탄소를 가장 많이 배출하는 주요 활동은?",
+    "firstOption": "에너지 소비",
+    "secondOption": "비닐 사용",
+    "explanation": "우리의 일상적인 전기 사용이 탄소 배출의 큰 부분을 차지해요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "해양 생태계도 기후변화의 영향을 받는다.",
+    "content": "물류와 유통 과정에서 발생하는 교통 수단의 탄소 배출은 무시할 수 없다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "해수온 상승은 산호초 백화현상 등을 유발합니다."
+    "explanation": "화물 운송 수단은 대형 엔진을 사용해 많은 이산화탄소를 배출해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "태양광 발전은 많은 온실가스를 배출하는 에너지원이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "태양광은 발전 과정에서 온실가스를 거의 배출하지 않는 청정 에너지예요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "고기 소비가 온실가스 배출에 영향을 준다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "소, 양 등 반추동물은 소화 과정에서 다량의 메탄가스를 배출해요."
   },
   {
     "quizType": "AB",
     "answer": "B",
-    "content": "기후난민의 주요 발생 원인은?",
-    "firstOption": "A. 여행과 이사 증가",
-    "secondOption": "B. 기후 재해로 인한 주거지 상실",
-    "explanation": "홍수, 해수면 상승 등으로 살던 곳을 떠나게 됩니다."
+    "content": "다음 중 이산화탄소를 가장 많이 배출하는 교통수단은?",
+    "firstOption": "자전거",
+    "secondOption": "비행기",
+    "explanation": "항공기는 장거리 운항 시 많은 화석연료를 사용하여 온실가스를 배출해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "플라스틱 쓰레기는 자연에서 쉽게 분해되지 않아 환경에 오랜 영향을 끼친다",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "플라스틱은 자연에서 분해되지 않아 토양과 바다를 오염시켜요."
   },
   {
     "quizType": "OX",
     "answer": "X",
-    "content": "기후변화로 인한 문제는 모두 선진국에서 해결할 수 있다.",
+    "content": "우리가 일상에서 사용하는 물은 탄소 배출과 전혀 관련이 없다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "국가 간 대응 능력 격차가 커 피해는 불균형합니다."
-  },
-  {
-    "quizType": "OX",
-    "answer": "O",
-    "content": "산호초는 기온 상승에 민감한 생물이다.",
-    "firstOption": "O",
-    "secondOption": "X",
-    "explanation": "온도 변화에 민감하여 백화현상이 발생합니다."
-  },
-  {
-    "quizType": "OX",
-    "answer": "O",
-    "content": "기후변화는 인간의 정신건강에도 영향을 줄 수 있다.",
-    "firstOption": "O",
-    "secondOption": "X",
-    "explanation": "재난 경험은 불안, 우울을 유발할 수 있습니다."
+    "explanation": "수돗물을 생산하고 운반하는 과정에서 전기가 사용되어 탄소가 배출돼요."
   },
   {
     "quizType": "AB",
     "answer": "A",
-    "content": "기후 변화가 불러오는 장기적 피해는?",
-    "firstOption": "A. 생태계 붕괴",
-    "secondOption": "B. 잠시 더운 날씨",
-    "explanation": "기후변화는 서서히 생태계를 무너뜨릴 수 있습니다."
-  },
-  {
-    "quizType": "OX",
-    "answer": "X",
-    "content": "기후변화로 해수면이 낮아지고 있다.",
-    "firstOption": "O",
-    "secondOption": "X",
-    "explanation": "빙하가 녹아 해수면은 상승하고 있습니다."
+    "content": "탄소발자국은 일상생활이나 산업 활동에서 발생한 이산화탄소 총량을 의미한다",
+    "firstOption": "인간 활동이 만든 탄소 총량",
+    "secondOption": "자동차 바퀴 자국",
+    "explanation": "탄소발자국은 생산, 소비 전 과정에서 발생하는 탄소 총량이에요."
   },
   {
     "quizType": "OX",
     "answer": "O",
-    "content": "폭우와 폭염은 기후변화의 대표적인 피해 유형이다.",
+    "content": "플라스틱 쓰레기를 태우는 과정에서 대기 중으로 유해한 물질이 방출된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "이상기후로 인한 자연재해가 증가하고 있습니다."
+    "explanation": "플라스틱을 태우면 다이옥신과 같은 유해물질이 공기 중에 퍼져요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "음식물 쓰레기가 썩으면서 발생하는 환경문제는 냄새 외에는 없다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "썩는 음식물에서 나오는 메탄은 강력한 온실가스로 대기를 오염시켜요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "공장, 건설 등 인간의 산업활동은 온실가스 배출에 큰 영향을 준다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "산업 현장은 다양한 연료를 사용해 이산화탄소 등 온실가스를 발생시켜요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "일상에서 탄소배출을 줄이기 위해 실천할 수 있는 행동은?",
+    "firstOption": "비닐포장 제품 구매",
+    "secondOption": "장바구니 사용",
+    "explanation": "장바구니는 1회용 비닐보다 환경에 훨씬 이롭고 실천하기 쉬운 방법이에요."
   }
 ]

@@ -5,7 +5,7 @@
     "content": "기후변화는 해수면 상승을 유발한다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "극지방 빙하가 녹아 해수면이 상승합니다."
+    "explanation": "극지방 빙하가 녹아 해수면이 상승해요."
   },
   {
     "quizType": "OX",
@@ -13,15 +13,15 @@
     "content": "해수면 상승은 섬 국가에 큰 위협이 된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "일부 섬 국가는 침수 위험에 처해 있습니다."
+    "explanation": "일부 섬 국가는 침수 위험에 처해 있어요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "기후변화로 가장 먼저 피해를 입는 생물은?",
-    "firstOption": "A. 인간",
-    "secondOption": "B. 야생 동식물",
-    "explanation": "생태계가 먼저 무너지며 영향을 받습니다."
+    "firstOption": "인간",
+    "secondOption": "야생 동식물",
+    "explanation": "생태계가 먼저 무너지며 영향을 받아요."
   },
   {
     "quizType": "OX",
@@ -29,7 +29,7 @@
     "content": "기후변화는 농작물 생산에 영향을 주지 않는다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "가뭄, 홍수 등으로 작물 수확량이 줄어듭니다."
+    "explanation": "가뭄, 홍수 등으로 작물 수확량이 줄어들어요."
   },
   {
     "quizType": "OX",
@@ -37,15 +37,15 @@
     "content": "기후변화는 물 부족 문제를 심화시킨다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "강수량 불균형으로 물 자원이 줄어듭니다."
+    "explanation": "강수량 불균형으로 물 자원이 줄어들어요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "기후난민이란?",
-    "firstOption": "A. 기후로 인해 거주지를 떠나는 사람들",
-    "secondOption": "B. 날씨가 더운 나라의 사람들",
-    "explanation": "기후 재해로 이주해야 하는 이들을 말합니다."
+    "firstOption": "기후로 인해 거주지를 떠나는 사람들",
+    "secondOption": "날씨가 더운 나라의 사람들",
+    "explanation": "기후 재해로 이주해야 하는 이들을 말해요."
   },
   {
     "quizType": "OX",
@@ -53,7 +53,7 @@
     "content": "기후변화는 건강과는 무관하다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "폭염, 질병 확산 등 건강에도 영향을 줍니다."
+    "explanation": "폭염, 질병 확산 등 건강에도 영향을 줘요."
   },
   {
     "quizType": "OX",
@@ -61,15 +61,15 @@
     "content": "폭염은 노약자 건강에 큰 위협이 된다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "체온 조절 능력이 약해 위험에 노출됩니다."
+    "explanation": "체온 조절 능력이 약해 위험에 노출돼요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "기후변화로 인한 식량 위기는 왜 발생할까?",
-    "firstOption": "A. 시장 물가 상승",
-    "secondOption": "B. 농업 환경 악화",
-    "explanation": "가뭄, 홍수 등으로 재배 자체가 어려워집니다."
+    "firstOption": "시장 물가 상승",
+    "secondOption": "농업 환경 악화",
+    "explanation": "가뭄, 홍수 등으로 재배 자체가 어려워져요."
   },
   {
     "quizType": "OX",
@@ -77,7 +77,7 @@
     "content": "기후변화는 가뭄과 홍수를 동시에 일으킬 수 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "강우 불균형으로 극단적인 상황이 생깁니다."
+    "explanation": "강우 불균형으로 극단적인 상황이 생겨요."
   },
   {
     "quizType": "OX",
@@ -85,15 +85,15 @@
     "content": "기후변화는 단기적인 재난만을 일으킨다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "기후변화는 장기적인 생태계 붕괴로 이어집니다."
+    "explanation": "기후변화는 장기적인 생태계 붕괴로 이어져요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "기후 변화로 가장 먼저 피해를 입는 산업은?",
-    "firstOption": "A. 농업",
-    "secondOption": "B. 금융업",
-    "explanation": "농업은 기후에 가장 민감한 산업입니다."
+    "firstOption": "농업",
+    "secondOption": "금융업",
+    "explanation": "농업은 기후에 가장 민감한 산업이에요."
   },
   {
     "quizType": "OX",
@@ -101,7 +101,7 @@
     "content": "기후변화는 식량 수급에 불안정을 초래한다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "작물 생산 감소로 식량 부족 현상이 발생합니다."
+    "explanation": "작물 생산 감소로 식량 부족 현상이 발생해요."
   },
   {
     "quizType": "OX",
@@ -109,15 +109,15 @@
     "content": "기후변화는 저소득 국가에는 큰 영향을 주지 않는다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "빈곤국일수록 대응 역량이 부족하여 피해가 큽니다."
+    "explanation": "빈곤국일수록 대응 역량이 부족하여 피해가 커요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "기후변화로 인해 생기는 새로운 감염병의 원인은?",
-    "firstOption": "A. 백신 부족",
-    "secondOption": "B. 해충과 병원체의 확산",
-    "explanation": "기온 상승으로 해충·병원체의 활동 범위가 넓어집니다."
+    "firstOption": "백신 부족",
+    "secondOption": "해충과 병원체의 확산",
+    "explanation": "기온 상승으로 해충·병원체의 활동 범위가 넓어져요."
   },
   {
     "quizType": "OX",
@@ -125,7 +125,7 @@
     "content": "기후변화는 정신건강에도 영향을 줄 수 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "재해로 인한 스트레스와 불안이 증가합니다."
+    "explanation": "재해로 인한 스트레스와 불안이 증가해요."
   },
   {
     "quizType": "OX",
@@ -133,15 +133,15 @@
     "content": "해수면 상승은 침수 피해를 유발할 수 있다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "저지대 도시는 직접적인 피해를 입습니다."
+    "explanation": "저지대 도시는 직접적인 피해를 입어요."
   },
   {
     "quizType": "AB",
     "answer": "A",
     "content": "기후로 인한 생물 다양성 감소는?",
-    "firstOption": "A. 멸종 위기 증가",
-    "secondOption": "B. 생태계 안정화",
-    "explanation": "기온 변화는 일부 종의 멸종을 촉진합니다."
+    "firstOption": "멸종 위기 증가",
+    "secondOption": "생태계 안정화",
+    "explanation": "기온 변화는 일부 종의 멸종을 촉진해요."
   },
   {
     "quizType": "OX",
@@ -149,7 +149,7 @@
     "content": "기후변화는 물의 질에도 영향을 준다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "수온 변화는 수질 오염 및 해양 생태계에 영향을 줍니다."
+    "explanation": "수온 변화는 수질 오염 및 해양 생태계에 영향을 줘요."
   },
   {
     "quizType": "OX",
@@ -157,6 +157,6 @@
     "content": "기후변화로 해양 생물이 더 잘 번식한다.",
     "firstOption": "O",
     "secondOption": "X",
-    "explanation": "수온 상승은 해양 생물 생존에 위협이 됩니다."
+    "explanation": "수온 상승은 해양 생물 생존에 위협이 돼요."
   }
 ]
