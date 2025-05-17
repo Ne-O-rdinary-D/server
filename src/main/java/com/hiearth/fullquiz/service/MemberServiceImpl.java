@@ -26,6 +26,7 @@ public class MemberServiceImpl implements MemberService{
         if (member.isPresent()) {
             throw new FullquizException(ErrorType.NICKNAME_DUPLICATED);
         }
+
         Member member1 = Member.builder()
                 .nickname(nickname)
                 .numOfSolvedQuiz(0)
@@ -38,7 +39,7 @@ public class MemberServiceImpl implements MemberService{
 
     @Override
     public Member findByNickname(String nickname) {
-        return memberRepository.findByNickname(nickname).orElseThrow();
+        return memberRepository.findByNickname(nickname).orElseThrow(() -> new FullquizException(ErrorType.MEMBER_NOT_FOUND));
     }
 
     @Override

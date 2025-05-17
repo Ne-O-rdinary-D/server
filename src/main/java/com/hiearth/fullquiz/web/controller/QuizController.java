@@ -9,6 +9,7 @@ import com.hiearth.fullquiz.web.dto.StatusResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +18,7 @@ import java.util.List;
 @Tag(name = "Quiz", description = "퀴즈 관련 API")
 @RestController
 @RequiredArgsConstructor
+@Slf4j
 public class QuizController {
 
     private final QuizSevice quizService;
@@ -26,6 +28,7 @@ public class QuizController {
     @PostMapping("/api/members/{memberId}/quizzes")
     public ResponseEntity<?> getQuizzes(@RequestParam String nickname,
                                         @RequestParam("category") String category) {
+        log.info("nickname : {} " + nickname);
         return ApiResponse.ok(quizService.getQuizzes(memberService.findByNickname(nickname).getId(), category));
     }
 

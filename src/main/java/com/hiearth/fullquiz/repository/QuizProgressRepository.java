@@ -9,5 +9,6 @@ import java.util.Optional;
 
 public interface QuizProgressRepository extends JpaRepository<QuizProgress, Long> {
     List<QuizProgress> findByMemberId(Long memberId);
+//    List<QuizProgress> findByMemberId(Long memberId);
     Optional<QuizProgress> findByMemberIdAndCategoryId(Long memberId, Long categoryId);
 }
