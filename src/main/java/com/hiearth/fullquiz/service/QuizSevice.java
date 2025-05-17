@@ -12,4 +12,5 @@ public interface QuizSevice {
     List<QuizResponse> getQuizzes(Long memberId, String category);
     void checkAnswer(Long quizId, Long memberId, CheckAnswerDTO checkAnswerDTO);
     List<QuizResponse> resumeQuiz(Long quizProgressId);
+
 }

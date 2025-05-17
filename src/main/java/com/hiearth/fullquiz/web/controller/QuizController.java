@@ -44,10 +44,5 @@ public class QuizController {
         return ApiResponse.ok(quizService.getCategories());
     }
 
-    @GetMapping("/api/quizes/continue")
-    public ResponseEntity<ApiResponse<ContinueQuizResponse>> continueQuiz(@RequestParam String nickname, @RequestParam String category) {
-        return ApiResponse.ok(quizService.continueQuiz(memberService.findByNickname(nickname).getId(), category));
-    }
-
 
 }
