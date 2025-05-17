@@ -19,8 +19,8 @@
     "quizType": "AB",
     "answer": "B",
     "content": "플라스틱이 재활용되면?",
-    "firstOption": "A. 원상태 그대로 사용",
-    "secondOption": "B. 분쇄·가공 후 재생산",
+    "firstOption": "원상태 그대로 사용",
+    "secondOption": "분쇄·가공 후 재생산",
     "explanation": "플라스틱은 파쇄, 세척, 압출 과정을 거쳐요."
   },
   {
@@ -43,8 +43,8 @@
     "quizType": "AB",
     "answer": "A",
     "content": "스티로폼 재활용 결과는?",
-    "firstOption": "A. 단열재",
-    "secondOption": "B. 식용 포장재",
+    "firstOption": "단열재",
+    "secondOption": "식용 포장재",
     "explanation": "스티로폼은 단열재나 완충재로 재활용돼요."
   },
   {
@@ -67,8 +67,8 @@
     "quizType": "AB",
     "answer": "B",
     "content": "재활용 유리의 용도는?",
-    "firstOption": "A. 고급 와인잔",
-    "secondOption": "B. 유리병, 벽돌재료 등",
+    "firstOption": "고급 와인잔",
+    "secondOption": "유리병, 벽돌재료 등",
     "explanation": "유리는 유리병, 포장재, 건축자재 등으로 사용돼요."
   },
   {
@@ -83,8 +83,8 @@
     "quizType": "AB",
     "answer": "A",
     "content": "폐플라스틱의 새로운 활용 예는?",
-    "firstOption": "A. 운동화 밑창",
-    "secondOption": "B. 전자회로",
+    "firstOption": "운동화 밑창",
+    "secondOption": "전자회로",
     "explanation": "재활용 플라스틱은 신발, 의류 등에 사용돼요."
   },
   {
@@ -107,8 +107,8 @@
     "quizType": "AB",
     "answer": "B",
     "content": "재활용 공정의 마지막 단계는?",
-    "firstOption": "A. 세척",
-    "secondOption": "B. 새로운 제품 생산",
+    "firstOption": "세척",
+    "secondOption": "새로운 제품 생산",
     "explanation": "재활용의 최종 목적은 새 제품으로 다시 쓰이는 것이에요."
   },
   {
@@ -131,16 +131,16 @@
     "quizType": "AB",
     "answer": "A",
     "content": "우유팩은 어떤 종이로 재활용될까?",
-    "firstOption": "A. 휴지나 키친타월",
-    "secondOption": "B. 공책용 종이",
+    "firstOption": "휴지나 키친타월",
+    "secondOption": "공책용 종이",
     "explanation": "우유팩은 흡수성 종이 제품으로 재활용돼요."
   },
   {
     "quizType": "AB",
     "answer": "B",
     "content": "플라스틱 병뚜껑의 활용은?",
-    "firstOption": "A. 비닐봉투",
-    "secondOption": "B. 플라스틱 장난감",
+    "firstOption": "비닐봉투",
+    "secondOption": "플라스틱 장난감",
     "explanation": "병뚜껑은 경질 플라스틱 제품으로 재탄생할 수 있어요."
   },
   {
