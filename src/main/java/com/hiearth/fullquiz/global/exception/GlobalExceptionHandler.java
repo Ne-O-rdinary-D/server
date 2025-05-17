@@ -11,7 +11,7 @@ import org.springframework.web.servlet.resource.NoResourceFoundException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@RestControllerAdvice(basePackages = {"com.hiearth.fullquiz.web.controller"})
+//@RestControllerAdvice(basePackages = {"com.hiearth.fullquiz.web.controller"})
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(FullquizException.class)
