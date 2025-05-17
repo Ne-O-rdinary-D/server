@@ -17,4 +17,6 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
     default List<Category> getAllCategories() {
         return findAll();
     }
+
+    List<Category> findByParentId(Long parentId);
 }
