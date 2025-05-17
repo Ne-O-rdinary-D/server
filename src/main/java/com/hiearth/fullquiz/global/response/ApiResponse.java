@@ -1,5 +1,6 @@
 package com.hiearth.fullquiz.global.response;
 
+import com.hiearth.fullquiz.global.error.ErrorType;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -50,6 +51,15 @@ public class ApiResponse<T> {
                 .body(ApiResponse.<T>builder()
                         .status(HttpStatus.CREATED.value())
                         .data(data)
+                        .build());
+    }
+
+    // 에러 응답 생성 메서드
+    public static ResponseEntity<ApiResponse<Void>> error(ErrorType errorType) {
+        return ResponseEntity.status(errorType.getStatus())
+                .body(ApiResponse.<Void>builder()
+                        .status(errorType.getStatus().value())
+                        .errorCode(errorType.getErrorCode())
                         .build());
     }
 
