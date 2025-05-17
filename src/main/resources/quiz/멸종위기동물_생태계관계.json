@@ -1,0 +1,162 @@
+[
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "멸종위기 동물의 감소는 먹이사슬 전체에 영향을 줄 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "멸종은 먹이사슬 붕괴와 생태계 기능 저하로 이어질 수 있어요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "한 종의 멸종은 다른 종에 아무런 영향을 주지 않는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "생물은 상호 의존 관계에 있어 한 종의 소멸은 연쇄 영향을 줘요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "멸종위기종의 감소로 가장 우선적으로 발생할 수 있는 현상은?",
+    "firstOption": "생태계 불균형",
+    "secondOption": "새로운 종의 출현",
+    "explanation": "멸종은 생물 간 균형을 무너뜨려 생태계 불안정을 초래해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "상위 포식자의 멸종은 중간 포식자의 과잉 개체 수를 유발할 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "최상위 포식자의 부재는 먹이사슬 하위 단계에 큰 영향을 줘요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "생물다양성 감소는 인간의 생존에는 별 영향을 주지 않는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "생물다양성은 식량, 의약품, 기후조절 등과 밀접히 관련돼 있어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 멸종위기종이 생태계에 기여하는 방식은?",
+    "firstOption": "인간의 문화 자원 제공",
+    "secondOption": "생태계 조절자 역할",
+    "explanation": "멸종위기종도 생태계 내에서 다른 종의 개체 수를 조절할 수 있어요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "멸종위기종의 보전은 생태계의 복원력과도 연관된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "다양한 종이 살아야 생태계가 외부 변화에 강하게 대응할 수 있어요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종위기종이 사라지면 새로운 종이 자동으로 그 역할을 대체한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "생물의 생태적 지위는 독특하여 대체가 어려운 경우가 많아요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "멸종위기 동물은 생물다양성 유지에 어떤 역할을 할까?",
+    "firstOption": "유전자 풀 보호",
+    "secondOption": "천적을 제거함",
+    "explanation": "멸종위기종은 유전적 다양성 보존의 관점에서 중요해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "생물다양성이 높은 생태계는 질병 저항력이 높다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "다양한 종이 병원체 확산을 막고 회복력을 높여줘요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "생태계는 멸종과 관계없이 항상 스스로 균형을 유지한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지속적 외부 충격은 생태계 균형을 무너뜨릴 수 있어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "멸종위기종의 서식지 보전이 중요한 이유는?",
+    "firstOption": "인간의 관광 자원 확보",
+    "secondOption": "생태계 구조 유지",
+    "explanation": "서식지는 생물 상호작용의 공간으로, 보전이 생태계 유지에 필수예요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "멸종위기종 복원은 생태계 서비스 향상에도 기여할 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "복원된 종은 토양정화, 수질개선 등 다양한 생태계 기능을 수행해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종은 단지 한 생물종의 문제가 아니라 인간 활동과 무관하다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "멸종은 생태계 붕괴, 자원 고갈 등 인간에게도 영향을 미쳐요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "포식자-피식자 관계에서 포식자의 소멸이 유발할 수 있는 결과는?",
+    "firstOption": "피식자 개체 수 폭증",
+    "secondOption": "생물 종 다양성 증가",
+    "explanation": "포식자가 사라지면 피식자가 과잉 번식해 생태계에 문제를 일으켜요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "습지에 사는 멸종위기종은 수질 정화 기능에 기여한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "일부 양서류, 수생식물은 오염물질을 흡수하거나 분해해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "멸종위기 동물은 생태계 내 상호작용과는 무관한 생물이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "모든 생물은 생태계 내에서 다른 종과 상호작용하며 살아가요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "생태계 복원 과정에서 멸종위기종이 중요한 이유는?",
+    "firstOption": "보기 좋기 때문",
+    "secondOption": "생태적 기능 회복의 핵심이기 때문",
+    "explanation": "멸종위기종은 종 간 연결고리로서 복원 대상의 핵심이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "멸종위기종이 복원되면 다른 종의 생존도 함께 도울 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "한 종의 복원은 서식지 회복과 다른 종의 생존에도 긍정적 영향을 줘요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "멸종위기 동물이 생태계 평형을 유지하는 방식은?",
+    "firstOption": "먹이사슬 조절",
+    "secondOption": "산소 배출 증가",
+    "explanation": "멸종위기종은 상위 포식자로서 개체 수 조절에 기여해요."
+  }
+]

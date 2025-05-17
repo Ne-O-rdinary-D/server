@@ -34,7 +34,7 @@ public class QuizServiceImpl implements QuizSevice{
 
     @Override
     @Transactional
-    public List<QuizResponse> getQuizzes(Long memberId, String categoryName) {
+    public TotalQuizResponse getQuizzes(Long memberId, String categoryName) {
 
         Category category = categoryRepository.findByName(categoryName)
                 .orElseThrow(() -> new IllegalArgumentException("해당 카테고리가 없습니다."));
@@ -71,7 +71,8 @@ public class QuizServiceImpl implements QuizSevice{
         quizProgress.getQuizAnswers().addAll(answers);
         quizProgressRepository.save(quizProgress);
 
-        return responses;
+        return TotalQuizResponse.of(quizProgress.getId(), responses);
+
     }
 
     @Override
