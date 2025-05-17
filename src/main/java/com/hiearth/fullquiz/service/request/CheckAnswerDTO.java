@@ -9,6 +9,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CheckAnswerDTO {
     private Boolean isCorrect;
-    private Long categoryId;
     private String userAnswer;
 }

@@ -92,8 +92,9 @@ public class QuizServiceImpl implements QuizSevice{
         );
 
         QuizProgress quizProgress = quizProgressRepository
-                .findByMemberIdAndCategoryId(memberId, checkAnswerDTO.getCategoryId())
-                .orElseThrow();
+                .findByMemberId(memberId).get(0);
+//                .findByMemberIdAndCategoryId(memberId, checkAnswerDTO.getCategoryId())
+//                .orElseThrow();
 
         quizProgress.solve(checkAnswerDTO.getUserAnswer(), checkAnswerDTO.getIsCorrect());
     }
