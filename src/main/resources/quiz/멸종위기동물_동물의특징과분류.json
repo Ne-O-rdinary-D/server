@@ -1,0 +1,162 @@
+[
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "호랑이는 고양잇과 동물 중 가장 큰 종류이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "호랑이는 근육질 몸체와 강한 턱을 가진 고양잇과 중 최대형 동물이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "펭귄은 포유류에 속하는 멸종위기 동물이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "펭귄은 날지 못하지만 깃털이 있는 조류에 속해요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "아시아 코끼리는 어떤 특징으로 아프리카 코끼리와 구분될까?",
+    "firstOption": "귀가 작고 등이 볼록하다",
+    "secondOption": "귀가 크고 뿔이 있다",
+    "explanation": "아시아 코끼리는 아프리카 코끼리에 비해 귀가 작고 등이 볼록해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "자이언트 판다는 초식성 동물로 대나무를 주로 먹는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "자이언트 판다는 식물성 먹이 중 대나무를 가장 즐겨 먹어요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "사막여우는 큰 귀로 체온을 발산하고 사막 환경에 적응했다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "사막여우의 큰 귀는 체온을 조절해 더위를 이기도록 도와줘요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 조류에 속하는 동물은?",
+    "firstOption": "바다거북",
+    "secondOption": "황새",
+    "explanation": "황새는 날개와 깃털이 있는 조류이고 멸종위기 동물이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "수달은 물가 주변에 서식하며 잡식성이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "수달은 물고기, 곤충, 조개 등을 먹는 잡식성 포유류이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "고래는 물고기의 한 종류이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "고래는 아가미가 없는 포유류이고 새끼를 낳아 길러요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "멸종위기 동물 중 '검독수리'는 어떤 분류에 속할까?",
+    "firstOption": "맹금류",
+    "secondOption": "파충류",
+    "explanation": "검독수리는 날카로운 부리와 발톱을 가진 맹금류이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "고슴도치는 위험할 때 몸을 말고 가시를 세운다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "고슴도치는 외부 자극에 반응해 몸을 웅크리고 가시로 자신을 방어해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "북극곰은 물고기보다 과일을 더 많이 먹는다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "북극곰은 주로 물개나 물고기를 사냥하는 육식동물이에요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 포유류가 아닌 동물은?",
+    "firstOption": "수달",
+    "secondOption": "두꺼비",
+    "explanation": "두꺼비는 양서류로 포유류에 포함되지 않아요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "올빼미는 주로 밤에 활동하는 야행성 조류이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "올빼미는 밤에 사냥을 하고 낮에는 휴식하는 야행성이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "하마는 포유류지만 물고기처럼 아가미로 호흡한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "하마는 폐로 호흡하는 포유류로, 수면 위로 올라와 숨을 쉬어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 알을 낳지 않는 동물은?",
+    "firstOption": "수달",
+    "secondOption": "악어",
+    "explanation": "수달은 새끼를 낳아 기르는 포유류이고, 악어는 알을 낳아요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "코뿔소는 뿔을 이유로 밀렵 위험이 높다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "코뿔소의 뿔은 불법 거래 대상이 되어 생존 위협을 받고 있어요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 육지에서 주로 생활하는 동물은?",
+    "firstOption": "매부리바다거북",
+    "secondOption": "스라소니",
+    "explanation": "스라소니는 숲에 사는 포식자이며 주로 육지에 서식해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "두루미는 멸종 위기 조류로서 긴 다리와 목이 특징이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "두루미는 아름다운 자태로 유명하며 현재 보호받는 조류이에요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 멸종위기 야생동물은?",
+    "firstOption": "반달가슴곰",
+    "secondOption": "청설모",
+    "explanation": "반달가슴곰은 개체 수가 적어 보호 대상이며 멸종위기종이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "해달은 바다에서 생활하지만 포유류에 속한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "해달은 물속에서도 새끼를 낳고 기르며 숨을 쉬는 포유류이에요."
+  }
+]

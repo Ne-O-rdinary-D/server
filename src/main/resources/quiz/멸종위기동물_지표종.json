@@ -1,0 +1,162 @@
+[
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "지표종은 환경 변화에 민감하게 반응하는 생물이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종은 오염, 기후 등 환경 변화를 조기에 감지할 수 있어요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "모든 지표종은 멸종위기종에 해당한다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종은 꼭 멸종위기종일 필요는 없고, 민감한 종이면 가능해요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "다음 중 지표종으로 적절한 특징은 무엇일까?",
+    "firstOption": "환경에 대한 적응력이 높은 생물",
+    "secondOption": "오염에 민감하게 반응하는 생물",
+    "explanation": "지표종은 환경 스트레스에 민감해 이상 징후를 알려줘요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "지표종은 환경 감시와 생태계 건강 평가에 활용된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종은 환경오염, 생물다양성 등 생태계 상태를 간접적으로 알려줘요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "지표종은 항상 육지 생물만 해당된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종에는 육상뿐 아니라 수생 생물도 포함돼요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "지표종으로 널리 알려진 동물은 무엇일까?",
+    "firstOption": "개구리",
+    "secondOption": "고양이",
+    "explanation": "양서류인 개구리는 피부로 독성 물질을 흡수해 오염에 민감해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "수질 오염 측정을 위해 담수어류가 지표종으로 활용된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "담수어류는 수질 변화에 민감하므로 오염도 판단에 유용해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "지표종은 사람의 관찰 없이 환경 상태를 알 수 있게 해준다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종의 행동 변화나 개체 수 조사는 인간의 관찰로 이루어져요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "지표종이 서식지에서 사라진다는 것은 무엇을 의미할까?",
+    "firstOption": "생존 경쟁력이 부족함",
+    "secondOption": "환경 질이 악화됨",
+    "explanation": "지표종이 사라지면 해당 지역 환경이 악화됐을 가능성이 커요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "지표종은 환경 복원 사업의 효과를 평가하는 기준이 될 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종의 회복 여부는 생태계 회복 정도를 판단하는 지표가 돼요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "미세먼지 농도 측정에는 주로 식물 지표종이 사용된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "미세먼지는 대기 중 측정기기가 활용되고, 식물은 오존 등에 사용돼요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "오존 피해 감지를 위해 사용되는 식물은 무엇일까?",
+    "firstOption": "들깨",
+    "secondOption": "선인장",
+    "explanation": "들깻잎은 오존 농도에 따라 반점이 생기는 대표적 식물 지표종이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "지표종은 생물학적 모니터링 도구로 활용될 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "생물학적 모니터링은 지표종을 활용한 장기적 생태 조사 방법이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "지표종이 많은 지역은 반드시 생물다양성이 높은 지역이다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종 수와 생물다양성은 항상 비례하지는 않아요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "양서류가 지표종으로 적합한 이유는 무엇일까?",
+    "firstOption": "산소를 많이 배출해서",
+    "secondOption": "피부로 유해물질을 흡수해서",
+    "explanation": "양서류는 외부 물질을 쉽게 흡수하기 때문에 오염에 매우 민감해요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "지표종은 생물학, 생태학 연구에서도 자주 사용된다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종은 환경 스트레스 반응을 연구하는 데 유용한 모델이에요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "X",
+    "content": "지표종의 변화는 장기적인 환경 변화와는 무관하다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종은 장기적인 환경 변화를 반영하는 생물학적 지표예요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "A",
+    "content": "다음 중 수질 지표종으로 사용되는 생물은?",
+    "firstOption": "실지렁이",
+    "secondOption": "개미",
+    "explanation": "실지렁이는 수질오염이 심한 지역에서만 발견되어 지표종으로 사용돼요."
+  },
+  {
+    "quizType": "OX",
+    "answer": "O",
+    "content": "환경 변화에 대한 조기 경고 시스템으로 지표종이 쓰일 수 있다.",
+    "firstOption": "O",
+    "secondOption": "X",
+    "explanation": "지표종은 환경 이상 발생 시 빠르게 반응해 경고 신호를 제공해요."
+  },
+  {
+    "quizType": "AB",
+    "answer": "B",
+    "content": "지표종과 유사한 개념으로 다음 중 적절한 것은?",
+    "firstOption": "식량종",
+    "secondOption": "감시종",
+    "explanation": "감시종은 지표종처럼 환경 이상을 파악하기 위해 활용돼요."
+  }
+]
