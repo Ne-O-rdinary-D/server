@@ -19,6 +19,7 @@ public class QuizResponse {
     private Boolean isCorrect;
     private Integer index;
     private String explanation;
+    private String userAnswer;
 
     public static QuizResponse of(Quiz quiz, int index) {
         return QuizResponse.builder()
@@ -34,7 +35,6 @@ public class QuizResponse {
                 .build();
     }
 
-
     public static QuizResponse forResume(Quiz quiz, QuizAnswer quizAnswer) {
         return QuizResponse.builder()
                 .id(quiz.getId())
@@ -42,6 +42,7 @@ public class QuizResponse {
                 .firstOption(quiz.getFirstOption())
                 .secondOption(quiz.getSecondOption())
                 .quizType(quiz.getQuizType())
+                .userAnswer(quizAnswer.getUserAnswer())
                 .answer(quiz.getAnswer())
                 .explanation(quiz.getExplanation())
                 .isCorrect(quizAnswer.getIsCorrect())
