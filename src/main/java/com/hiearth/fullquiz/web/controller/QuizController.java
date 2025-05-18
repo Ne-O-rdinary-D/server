@@ -43,6 +43,7 @@ public class QuizController {
         return ApiResponse.ok(null);
     }
 
+    @Operation(summary = "진행중인 퀴즈 보기", description = "유저가 진행중인 카테고리의 정보를 반환합니다.")
     @GetMapping("/api/quizzes")
     public ResponseEntity<?> getProgress(@RequestParam String nickname) {
         QuizProgressDTO quizProgress = quizService.getQuizProgress(memberService.findByNickname(nickname).getId());
